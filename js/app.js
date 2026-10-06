@@ -243,7 +243,8 @@
     "post": "Post em rede social",
     "video": "Vídeo",
     "entrevista": "Entrevista",
-    "agenda": "Agenda"
+    "agenda": "Agenda",
+    "documento": "Documento"
   };
 
   function loadClipagem() {
@@ -275,7 +276,7 @@
       el.innerHTML = '<div class="empty">Nenhuma clipagem cadastrada ainda.</div>';
       return;
     }
-    var tipos = ["todos", "noticia", "comunicado", "post", "video", "entrevista", "agenda"];
+    var tipos = ["todos", "noticia", "comunicado", "post", "video", "entrevista", "agenda", "documento"];
     var html = '<div class="clip-filters">' + tipos.map(function (t) {
       var label = t === "todos" ? "Todos" : TIPO_LABELS[t] || t;
       var active = clipFilter === t ? " is-active" : "";

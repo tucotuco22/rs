@@ -13,10 +13,11 @@ Uso:
       --resumo "Resumo curto" \
       --tags "eleição,transição"
 
-Tipos aceitos: noticia | comunicado | post | video | entrevista | agenda
+Tipos aceitos: noticia | comunicado | post | video | entrevista | agenda | documento
 Se a pessoa não existir, crie-a com --nome-completo, --cargo e --partido.
 """
 import argparse
+import datetime
 import json
 import os
 import sys
@@ -25,7 +26,7 @@ import unicodedata
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CLIPS = os.path.join(BASE, "clipagem", "clips.json")
 
-TIPOS = {"noticia", "comunicado", "post", "video", "entrevista", "agenda"}
+TIPOS = {"noticia", "comunicado", "post", "video", "entrevista", "agenda", "documento"}
 
 
 def slug(s):
@@ -96,7 +97,7 @@ def main():
 
     pessoa["itens"].append(item)
     pessoa["itens"].sort(key=lambda i: str(i.get("data", "")), reverse=True)
-    data["atualizado_em"] = args.data
+    data["atualizado_em"] = datetime.date.today().isoformat()
 
     with open(CLIPS, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)

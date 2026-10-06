@@ -111,7 +111,7 @@ A clipagem é um arquivo de material sobre políticos, versionado no git (cada i
         {
           "id": "2026-10-04-agenciabrasil",
           "data": "2026-10-04",                 // data de publicação
-          "tipo": "noticia",                    // noticia | comunicado | post | video | entrevista | agenda
+          "tipo": "noticia",                    // noticia | comunicado | post | video | entrevista | agenda | documento
           "titulo": "…",
           "fonte": "Agência Brasil",
           "url": "https://…",
