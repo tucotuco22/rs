@@ -1,0 +1,60 @@
+{
+  "4303103": {
+    "prefeito": { "nome": "Jussara Caçapava", "nome_urna": "Jussara Caçapava", "partido": "AVANTE", "mandato": "2025-2028" },
+    "vice_prefeito": { "nome": "Luis Carlos Azevedo da Rosa", "nome_urna": "Mano", "partido": "PL", "mandato": "2025-2028" },
+    "nota": "Eleito em 2024, Cristian Wasem (MDB) foi cassado; eleição suplementar em 12/04/2026 elegeu Jussara Caçapava (Avante) e o vice Mano (PL). Após cassação em 1ª instância, o TRE-RS reverteu em 13/08/2026 e manteve a chapa no cargo.",
+    "fontes": [
+      "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/04/12/jussara-cacapava-do-avante-e-eleita-prefeita-de-cachoeirinha-em-eleicao-suplementar.ghtml",
+      "https://gauchazh.clicrbs.com.br/colunistas/rosane-de-oliveira/noticia/2026/08/tre-reverte-cassacao-e-mantem-prefeita-e-vice-de-cachoeirinha-nos-cargos-cmss21jh8001w01hwn0hw3zkk.html"
+    ]
+  },
+  "4301057": {
+    "prefeito": { "nome": "Vera Rejane Braga dos Santos", "nome_urna": "Vera Rejane", "partido": "PSD", "mandato": "2025-2028", "situacao": "Prefeita interina (presidente da Câmara) desde 11/09/2026" },
+    "vice_prefeito": null,
+    "nota": "O prefeito eleito em 2024, Luciano Pinto (Republicanos), e o vice Valdir Cenci (PP) foram cassados em ago/2026. Desde 11/09/2026 a presidente da Câmara é prefeita interina (sem vice). Eleição suplementar marcada para 25/10/2026.",
+    "fontes": [
+      "https://afolhatorres.com.br/presidente-da-camara-vereadora-rejane-toma-posse-como-prefeita-interina-de-arroio-do-sal/",
+      "https://gauchazh.clicrbs.com.br/pioneiro/politica/noticia/2026/09/tre-mantem-cassacao-de-prefeito-e-vice-de-arroio-do-sal-e-marca-novas-eleicoes-para-outubro-cmttz2q37000e01itqzq83ks6.html"
+    ]
+  },
+  "4320008": {
+    "prefeito": { "nome": "Nestor Bernardes", "nome_urna": "Nestor Bernardes", "partido": "UNIÃO", "mandato": "2025-2028" },
+    "vice_prefeito": null,
+    "nota": "O prefeito reeleito em 2024, Volmir Rodrigues (PP), renunciou em 31/03/2026; o vice Nestor Bernardes (União Brasil) assumiu em 01/04/2026.",
+    "fontes": [
+      "https://gauchazh.clicrbs.com.br/colunistas/rosane-de-oliveira/noticia/2026/03/prefeito-de-sapucaia-do-sul-confirma-renuncia-para-concorrer-a-deputado-cmn9f9iyg010v01jee3qa7n1h.html"
+    ]
+  },
+  "4312609": {
+    "prefeito": { "nome": "Amarildo Baldasso", "nome_urna": "Amarildo Baldasso", "partido": "PSD", "mandato": "2025-2028" },
+    "vice_prefeito": null,
+    "nota": "O prefeito reeleito em 2024, Mateus Trojan (MDB), renunciou em 02/04/2026; o vice Amarildo Baldasso (PSD) assumiu o mandato.",
+    "fontes": [
+      "https://grupoahora.net.br/conteudos/2026/04/02/trojan-renuncia-em-mucum-e-vice-assume-governo/"
+    ]
+  },
+  "4302105": {
+    "prefeito": { "nome": "Amarildo Lucatelli", "nome_urna": "Amarildo Lucatelli", "partido": "PP", "mandato": "2025-2028" },
+    "vice_prefeito": null,
+    "nota": "O prefeito reeleito em 2024, Diogo Siqueira, renunciou em 2026; o vice Amarildo Lucatelli (PP) assumiu a prefeitura.",
+    "fontes": [
+      "https://radiosolaris.com.br/prefeito-diogo-siqueira-renuncia-e-amarildo-lucatelli-assume-a-prefeitura-de-bento/"
+    ]
+  },
+  "4301107": {
+    "prefeito": { "nome": "Renato Feiten", "nome_urna": "Renato Feiten", "partido": "MDB", "mandato": "2025-2028" },
+    "vice_prefeito": null,
+    "nota": "O prefeito eleito em 2024, Jaury Gonzales da Cunha (PP), morreu antes da posse; o vice Renato Feiten (MDB) foi empossado em 01/01/2025.",
+    "fontes": [
+      "https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/elei%C3%A7%C3%B5es/morre-prefeito-eleito-de-arroio-do-ratos-jaury-gonzales-da-cunha-aos-65-anos-1.1558919"
+    ]
+  },
+  "4301503": {
+    "prefeito": { "nome": "Sergio Neuberger", "nome_urna": "Sergio Neuberger", "partido": "MDB", "mandato": "2025-2028" },
+    "vice_prefeito": null,
+    "nota": "O prefeito eleito em 2024, Darci Sallet (MDB), morreu antes da posse; o vice Sergio Neuberger (MDB) foi empossado em 01/01/2025.",
+    "fontes": [
+      "https://www.metropoles.com/brasil/tres-prefeitos-eleitos-morreram-antes-da-posse-saiba-o-que-acontece"
+    ]
+  }
+}

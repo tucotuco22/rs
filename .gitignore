@@ -1,0 +1,13 @@
+# Dependências e caches
+node_modules/
+.npm-cache/
+
+# Dados brutos baixados (regeneráveis pelos scripts)
+data/raw/
+
+# Artefatos de build/editor
+*.zip
+*.xpi
+.DS_Store
+Thumbs.db
+web-ext-artifacts/

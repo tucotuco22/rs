@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa Político do Rio Grande do Sul</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <header class="sidebar__header">
+      <h1>Mapa Político <span>Rio Grande do Sul</span></h1>
+      <p class="subtitle">497 municípios · prefeitos, vices e gestão estadual</p>
+    </header>
+
+    <div class="search">
+      <input type="text" id="search" placeholder="Buscar município (ex.: Santa Maria)" autocomplete="off" />
+      <ul class="search__results" id="searchResults"></ul>
+    </div>
+
+    <nav class="tabs">
+      <button class="tab is-active" data-tab="estado">Estado &amp; Senado</button>
+      <button class="tab" data-tab="municipio">Município</button>
+    </nav>
+
+    <section class="panel" id="panelEstado"></section>
+    <section class="panel" id="panelMunicipio" hidden></section>
+
+    <footer class="sidebar__footer">
+      <p>Fontes: dados abertos do <a href="https://dadosabertos.tse.jus.br/" target="_blank" rel="noopener">TSE</a> (eleições 2024 e 2026) e <a href="https://www.ibge.gov.br/" target="_blank" rel="noopener">IBGE</a> (malha municipal).</p>
+      <p class="muted">Última atualização: 06/10/2026.</p>
+    </footer>
+  </aside>
+
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Alternar painel">☰</button>
+
+  <main class="map-wrap">
+    <div id="map"></div>
+    <div class="legend" id="legend"></div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

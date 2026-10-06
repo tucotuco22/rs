@@ -1,0 +1,101 @@
+{
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "atualizado_em": "2026-10-06",
+  "governador": {
+    "atual": {
+      "nome": "Eduardo Leite",
+      "partido": "PSDB",
+      "mandato": "2023-2026",
+      "nota": "Mandato vigente até 31/12/2026."
+    },
+    "eleito": {
+      "nome": "Luciano Lorenzini Zucco",
+      "nome_urna": "Zucco",
+      "partido": "PL",
+      "coligacao": "O RIO GRANDE PODE MAIS",
+      "mandato": "2027-2030",
+      "nota": "Eleito em 1º turno em 04/10/2026; posse em 01/01/2027."
+    }
+  },
+  "vice_governador": {
+    "atual": {
+      "nome": "Gabriel Souza",
+      "partido": "MDB",
+      "mandato": "2023-2026"
+    },
+    "eleito": {
+      "nome": "Silvana Maria Franciscatto Covatti",
+      "partido": "PP",
+      "mandato": "2027-2030"
+    }
+  },
+  "senadores": {
+    "atuais": [
+      {
+        "nome": "Paulo Paim",
+        "partido": "PT",
+        "mandato": "2019-2027"
+      },
+      {
+        "nome": "Luis Carlos Heinze",
+        "partido": "PP",
+        "mandato": "2019-2027"
+      },
+      {
+        "nome": "Hamilton Mourão",
+        "partido": "Republicanos",
+        "mandato": "2023-2031"
+      }
+    ],
+    "eleitos_2026": [
+      {
+        "nome": "Marcel Van Hattem",
+        "nome_urna": "Marcel Van Hattem",
+        "partido": "NOVO",
+        "partido_nome": "PARTIDO NOVO",
+        "coligacao": "O RIO GRANDE PODE MAIS",
+        "numero": "300",
+        "mandato": "2027-2035",
+        "suplentes": [
+          {
+            "nome": "Sergio Bergonsi Turra",
+            "partido": "PP",
+            "ordem": "1º SUPLENTE"
+          },
+          {
+            "nome": "Ricardo Munarski Jobim",
+            "partido": "NOVO",
+            "ordem": "2º SUPLENTE"
+          }
+        ]
+      },
+      {
+        "nome": "Ubiratan Antunes Sanderson",
+        "nome_urna": "Sanderson",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "coligacao": "O RIO GRANDE PODE MAIS",
+        "numero": "222",
+        "mandato": "2027-2035",
+        "suplentes": [
+          {
+            "nome": "Ernani Mario Coelho Mello",
+            "partido": "PL",
+            "ordem": "2º SUPLENTE"
+          },
+          {
+            "nome": "Ireneu Orth",
+            "partido": "PP",
+            "ordem": "1º SUPLENTE"
+          }
+        ]
+      }
+    ]
+  },
+  "fontes": [
+    "https://dadosabertos.tse.jus.br/dataset/candidatos-2026",
+    "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/luciano-zucco-e-eleito-governador-do-rs",
+    "https://www12.senado.leg.br/noticias/materias/2026/10/04/rio-grande-do-sul-elege-sanderson-e-marcel-van-hattem-para-o-senado"
+  ]
+}
