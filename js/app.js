@@ -35,6 +35,9 @@
 
   function fmtMoney(v) {
     if (v == null || v === "") return "—";
+    if (typeof v === "number") {
+      return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+    }
     var n = Number(String(v).replace(/[^\d.,-]/g, "").replace(/\./g, "").replace(",", "."));
     if (isNaN(n)) return String(v);
     return n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -123,37 +126,43 @@
   function renderGastos(g) {
     var html = '<div class="card"><h2>Gastos da prefeitura</h2>';
     var al = g.aluguel || {};
-    if (al.por_ano && Object.keys(al.por_ano).length) {
-      html += '<h3>Aluguel / locação de imóveis — por ano</h3>';
-      html += '<div class="gastos-grid">';
-      Object.keys(al.por_ano).sort().forEach(function (ano) {
-        var v = al.por_ano[ano];
-        html += '<div class="gastos-cell"><div class="label">' + esc(ano) + '</div>' +
-          '<div class="value money ' + (v ? "big" : "") + '">' + fmtMoney(v) + '</div></div>';
+    if (al.titulo) html += '<p class="sub" style="margin-top:2px">' + esc(al.titulo) + '</p>';
+    if (al.nota) html += '<div class="gastos-note">' + esc(al.nota) + '</div>';
+
+    // elementos de despesa (locação é subitem)
+    if (al.por_elemento && al.por_elemento.length) {
+      al.por_elemento.forEach(function (el) {
+        html += '<h3>' + esc(el.elemento) + '</h3><div class="gastos-grid">';
+        Object.keys(el.anos || {}).forEach(function (ano) {
+          html += '<div class="gastos-cell"><div class="label">' + esc(ano) + '</div>' +
+            '<div class="value money">' + fmtMoney(el.anos[ano]) + '</div></div>';
+        });
+        html += '</div>';
       });
-      html += '</div>';
     }
-    if (al.mensal_recente && al.mensal_recente.valor) {
-      html += '<h3>Mensal mais recente</h3>';
-      html += '<div class="gastos-cell"><div class="label">' + esc(al.mensal_recente.mes || "último mês") + '</div>' +
-        '<div class="value money">' + fmtMoney(al.mensal_recente.valor) + '</div></div>';
-    }
-    if (al.elemento_despesa && al.elemento_despesa.length) {
-      html += '<h3>Elementos de despesa</h3><div class="sub">' + al.elemento_despesa.map(esc).join(" · ") + '</div>';
-    }
-    if (al.maiores_locadores && al.maiores_locadores.length) {
-      html += '<h3>Maiores locadores</h3><table class="mini"><thead><tr><th>Credor</th><th>Valor</th></tr></thead><tbody>';
-      al.maiores_locadores.forEach(function (l) {
-        html += '<tr><td>' + esc(l.credor) + '</td><td class="money">' + fmtMoney(l.valor) + '</td></tr>';
+
+    // locadores identificados
+    var loc = al.locadores_identificados || al.maiores_locadores || [];
+    if (loc.length) {
+      html += '<h3>Locadores de imóveis identificados</h3>';
+      html += '<table class="mini"><thead><tr><th>Credor</th><th>Valor</th></tr></thead><tbody>';
+      loc.forEach(function (l) {
+        html += '<tr><td>' + esc(l.credor) +
+          (l.periodo ? '<div class="muted" style="font-size:11px">' + esc(l.periodo) + '</div>' : '') +
+          '</td><td class="money">' + fmtMoney(l.valor) + '</td></tr>';
       });
       html += '</tbody></table>';
     }
-    if (g.fontes && g.fontes.length) {
-      html += '<h3>Fonte dos gastos</h3>' + g.fontes.map(function (u) {
+
+    // fontes
+    var src = al.fontes || g.fontes || [];
+    if (src.length) {
+      html += '<h3>Fontes</h3>' + src.map(function (u) {
         return '<div class="sub"><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(u) + '</a></div>';
       }).join("");
     }
-    if (g.bloqueios) html += '<p class="sub">Nota: ' + esc(g.bloqueios) + '</p>';
+    if (g.bloqueios) html += '<div class="gastos-note warn">' + esc(g.bloqueios) + '</div>';
+    if (g.extraido_em) html += '<p class="muted" style="font-size:11px;margin-top:8px">Dados extraídos em ' + esc(g.extraido_em) + '.</p>';
     html += '</div>';
     return html;
   }

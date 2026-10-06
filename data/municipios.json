@@ -7275,6 +7275,73 @@
       "partido_nome": "PROGRESSISTAS",
       "coligacao": "TODOS POR SANTA MARIA",
       "mandato": "2025-2028"
+    },
+    "nota": "",
+    "fontes": [],
+    "gastos": {
+      "aluguel": {
+        "titulo": "Aluguel / locação de imóveis",
+        "nota": "A locação de imóveis (aluguel) é um subitem dos elementos de despesa 3.3.90.36 (Outros Serviços de Terceiros – Pessoa Física) e 3.3.90.39 (Outros Serviços de Terceiros – Pessoa Jurídica). Os relatórios públicos mensais detalham apenas até o nível de ELEMENTO, então o total exato de aluguel não é isolável — os valores abaixo são o total de cada elemento (que contém o aluguel).",
+        "por_elemento": [
+          {
+            "elemento": "3.3.90.36 — Outros serviços (Pessoa Física)",
+            "anos": {
+              "2023": 2251139.21,
+              "2024": 4555515.7,
+              "2025": 5854117.53,
+              "2026 (até ago)": 4058628.32
+            }
+          },
+          {
+            "elemento": "3.3.90.39 — Outros serviços (Pessoa Jurídica)",
+            "anos": {
+              "2023": 159294305.12,
+              "2024": 189494637.35,
+              "2025": 154009684.65,
+              "2026 (até ago)": 147106296.39
+            }
+          }
+        ],
+        "locadores_identificados": [
+          {
+            "credor": "Imobiliária Brasão Ltda.",
+            "cnpj": "90.094.863/0001-68",
+            "valor": 416215.1,
+            "periodo": "2023"
+          },
+          {
+            "credor": "Modelo Assessoria Imobiliária Ltda.",
+            "cnpj": "93.529.063/0001-10",
+            "valor": 105483.97,
+            "periodo": "2023–2026"
+          },
+          {
+            "credor": "Imobiliária Auxiliadora Predial",
+            "cnpj": "41.296.925/0001-09",
+            "valor": 20847.09,
+            "periodo": "2024–2026"
+          },
+          {
+            "credor": "Imobiliária Gallina Ltda.",
+            "cnpj": "89.799.373/0001-88",
+            "valor": 16800.0,
+            "periodo": "2024–2026"
+          },
+          {
+            "credor": "Imobiliária Vista Ltda.",
+            "cnpj": "44.572.738/0001-07",
+            "valor": 14864.52,
+            "periodo": "2024–2026"
+          }
+        ],
+        "fontes": [
+          "https://www.santamaria.rs.gov.br/transparencia/despesa/empenho",
+          "https://www.santamaria.rs.gov.br/transparencia/despesa/despesa-por-categoria",
+          "https://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/ReceitaDespesa/trd_20260831-1050.pdf"
+        ]
+      },
+      "bloqueios": "Total exato de aluguel não isolável publicamente: o subitem 'locação de imóveis' aparece só no detalhe de cada empenho; a API de Dados Abertos de despesas está quebrada e a exportação CSV exige captcha (Turnstile).",
+      "extraido_em": "2026-10-06"
     }
   },
   {

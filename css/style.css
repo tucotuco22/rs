@@ -136,6 +136,17 @@ body { display: flex; overflow: hidden; }
 .empty { color: var(--muted); font-size: 13px; text-align: center; padding: 30px 0; }
 
 /* Gastos */
+.gastos-note {
+  background: rgba(56,189,248,0.08);
+  border: 1px solid rgba(56,189,248,0.25);
+  border-radius: 8px;
+  padding: 9px 11px;
+  font-size: 12.5px;
+  color: #bae6fd;
+  line-height: 1.45;
+  margin: 6px 0 10px;
+}
+.gastos-note.warn { background: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.3); color: #fde68a; }
 .gastos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .gastos-cell { background: var(--bg-hover); border-radius: 8px; padding: 10px; }
 .gastos-cell .label { font-size: 11px; color: var(--muted); }
