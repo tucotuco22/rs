@@ -124,10 +124,25 @@ A clipagem é um arquivo de material sobre políticos, versionado no git (cada i
 }
 ```
 
-Para adicionar material:
+Para adicionar material, use o helper (recomendado) ou edite o JSON à mão:
 
-1. Edite `clipagem/clips.json` e acrescente um objeto no array `itens` da pessoa (ou crie uma nova pessoa em `pessoas`).
-2. `git add clipagem/clips.json && git commit -m "clipagem: <título>"` e `git push`.
+```bash
+python3 scripts/add_clip.py \
+  --pessoa zucco \
+  --data 2026-10-06 \
+  --tipo noticia \
+  --titulo "Título da notícia" \
+  --fonte "Agência Brasil" \
+  --url "https://..." \
+  --resumo "Resumo curto" \
+  --tags "eleição,transição"
+```
+
+O script cria/atualiza a pessoa, ordena os itens por data e imprime o comando de commit sugerido. Alternativamente, edite `clipagem/clips.json` e acrescente um objeto no array `itens` da pessoa (ou crie uma nova pessoa em `pessoas`). Em seguida:
+
+```bash
+git add clipagem/clips.json && git commit -m "clipagem: <título>" && git push
+```
 
 O site exibe a clipagem na aba **Clipagem**, com filtro por tipo e linha do tempo ordenada por data. Fontes úteis para acompanhar: [Agência de Notícias do RS](https://estado.rs.gov.br/ultimas-noticias), [Agenda do Governador](https://estado.rs.gov.br/agenda-do-governador) e a imprensa.
 
