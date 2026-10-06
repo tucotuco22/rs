@@ -1,0 +1,209 @@
+{
+  "gerado_em": "2026-10-06",
+  "resumo": {
+    "total": 71,
+    "cumprido": 0,
+    "em_andamento": 0,
+    "nao_cumprido": 0,
+    "a_verificar": 71,
+    "pct_concluido": 0.0
+  },
+  "por_eixo": [
+    {
+      "eixo": "1. Um Estado que Protege",
+      "total": 10,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 10,
+      "pct_concluido": 0.0
+    },
+    {
+      "eixo": "2. Um Estado que Cuida",
+      "total": 11,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 11,
+      "pct_concluido": 0.0
+    },
+    {
+      "eixo": "3. Um Estado que Cresce",
+      "total": 15,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 15,
+      "pct_concluido": 0.0
+    },
+    {
+      "eixo": "4. Um Estado que Conecta",
+      "total": 20,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 20,
+      "pct_concluido": 0.0
+    },
+    {
+      "eixo": "5. Um Estado que Funciona",
+      "total": 10,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 10,
+      "pct_concluido": 0.0
+    },
+    {
+      "eixo": "6. Um Estado que Lidera",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    }
+  ],
+  "por_projeto": [
+    {
+      "numero": 1,
+      "titulo": "Preparar e entregar projetos estratégicos",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 2,
+      "titulo": "Proteger as bacias contra cheias",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 3,
+      "titulo": "Ampliar a segurança hídrica",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 4,
+      "titulo": "Integrar o corredor logístico do Cone Sul",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 5,
+      "titulo": "Transformar a energia e a bioeconomia da Metade Sul",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 6,
+      "titulo": "Desenvolver a microeletrônica gaúcha",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 7,
+      "titulo": "Construir um polo de tecnologias em saúde",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 8,
+      "titulo": "Agregar valor à produção gaúcha",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 9,
+      "titulo": "Conectar todo o Rio Grande",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 10,
+      "titulo": "Integrar a mobilidade metropolitana",
+      "total": 6,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 6,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 11,
+      "titulo": "Requalificar cidades e moradias",
+      "total": 4,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 4,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 12,
+      "titulo": "Internacionalizar o Rio Grande do Sul",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 13,
+      "titulo": "Formar talentos para os projetos do futuro",
+      "total": 6,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 6,
+      "pct_concluido": 0.0
+    },
+    {
+      "numero": 14,
+      "titulo": "Transformar o Estado em plataforma digital",
+      "total": 5,
+      "cumprido": 0,
+      "em_andamento": 0,
+      "nao_cumprido": 0,
+      "a_verificar": 5,
+      "pct_concluido": 0.0
+    }
+  ]
+}

@@ -146,6 +146,24 @@ git add clipagem/clips.json && git commit -m "clipagem: <título>" && git push
 
 O site exibe a clipagem na aba **Clipagem**, com filtro por tipo e linha do tempo ordenada por data. Fontes úteis para acompanhar: [Agência de Notícias do RS](https://estado.rs.gov.br/ultimas-noticias), [Agenda do Governador](https://estado.rs.gov.br/agenda-do-governador) e a imprensa.
 
+## Fact-checking do plano de governo
+
+O repositório guarda o plano de governo do governador eleito e uma estrutura de acompanhamento de promessas:
+
+- `clipagem/documentos/plano-de-governo-zucco.pdf` — plano original (107 págs.).
+- `clipagem/documentos/plano-de-governo-zucco.resumo.md` — resumo (6 eixos + 14 Projetos Prioritários).
+- `clipagem/documentos/fact-checking-2027.md` — checklist com 71 indicadores de resultado.
+- `clipagem/documentos/fact-checking-status.md` / `.json` — relatório de status gerado.
+
+Fluxo:
+
+1. Marque itens no checklist (`[x]` + `status` + evidência) e commite.
+2. Regere o relatório de status:
+   ```bash
+   python3 scripts/fact_check_status.py
+   ```
+   Ele calcula percentual de cumprimento por **eixo** e por **projeto** e atualiza `fact-checking-status.md`/`.json`.
+
 ## Executar localmente
 
 ```bash
