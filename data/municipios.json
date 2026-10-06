@@ -7660,6 +7660,152 @@
             }
           ]
         },
+        "contratos_detalhados": [
+          {
+            "imovel": "Sede da Secretaria de Desenvolvimento Social (SMDS)",
+            "endereco": "Rua Tuiuti, nº 1586, Centro, Santa Maria/RS",
+            "locador": "FER Investimentos Ltda (representada por Melo Imóveis Ltda)",
+            "cnpj": "48.225.368/0001-84",
+            "finalidade": "Sede administrativa da SMDS",
+            "valor_mensal": 15000.0,
+            "periodo": "Contrato de 12 meses; renovação por inexigibilidade (Lei 14.133/2021)",
+            "fonte": "https://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/licitacoes/lic_20260225-3537-13909.pdf",
+            "nota": "Estudo Técnico Preliminar de 25/02/2026 confirma que o imóvel continua alugado (R$ 15.000/mês)."
+          },
+          {
+            "imovel": "Sede da Secretaria de Esporte e Lazer",
+            "endereco": "Rua Silva Jardim, nº 1660, Centro, Santa Maria/RS",
+            "locador": "Instituto das Irmãs Franciscanas da Penitência e Caridade Cristã (IFRAPEC)",
+            "cnpj": "94.446.226/0001-64",
+            "finalidade": "Sede da Secretaria de Esporte e Lazer",
+            "valor_mensal": 7166.84,
+            "periodo": "6º aditivo (Dispensa 79/2018)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf"
+          },
+          {
+            "imovel": "Sede da Secretaria de Cultura",
+            "endereco": "Rua Venâncio Aires, nº 2741, Centro, Santa Maria/RS",
+            "locador": "Organização Santamariense de Hotéis S.A.",
+            "finalidade": "Sede da Secretaria de Cultura",
+            "valor_mensal": 10176.52,
+            "periodo": "5º aditivo (Dispensa 189/2020)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf"
+          },
+          {
+            "imovel": "CAPS II Prado Veppo",
+            "endereco": "Avenida Hélvio Basso, nº 1245, Santa Maria/RS",
+            "locador": "Elezi de Lima Cardoso",
+            "finalidade": "Centro de Atenção Psicossocial II (Saúde)",
+            "valor_mensal": 10387.2,
+            "periodo": "9º aditivo (Dispensa 16/2014)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202308021137331525.pdf"
+          },
+          {
+            "imovel": "UBS Centro Social Urbano Maria Ribas de Nardin",
+            "endereco": "Rua Ernesto Alves, nº 245, Bairro Passo da Areia, Santa Maria/RS",
+            "locador": "Instituto Espírita Leocadio José Correa",
+            "finalidade": "Unidade Básica de Saúde",
+            "valor_mensal": 3651.8,
+            "periodo": "3º aditivo (Dispensa 149/2020)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202308021137331525.pdf"
+          },
+          {
+            "imovel": "Garagem (Box 42 a 47, subsolo 02, Edifício Office Tower)",
+            "endereco": "Edifício Comercial Office Tower, subsolo 02, Santa Maria/RS",
+            "locador": "MRU Construções Ltda",
+            "cnpj": "13.692.493/0001-10",
+            "finalidade": "Estacionamento de veículos oficiais (Meio Ambiente + Licenciamento)",
+            "valor_mensal": 1500.0,
+            "periodo": "Contrato novo de 12 meses (Dispensa 96/2023)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf"
+          },
+          {
+            "imovel": "EMEF Major Tancredo Penna de Moraes (escola interditada)",
+            "endereco": "Distrito de Palma, Santa Maria/RS",
+            "locador": "Carlos Augusto Mallmann",
+            "finalidade": "Escola de Ensino Fundamental — alunos da escola interditada",
+            "valor_mensal": 58018.0,
+            "periodo": "Contrato de 60 meses (Dispensa 82/2023)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf",
+            "nota": "Aluguel mais caro do município; 115 crianças atendidas em outro local desde mai/2023."
+          },
+          {
+            "imovel": "Centro de Referência da Mulher (CRM)",
+            "locador": "Luiz Coelho Imóveis Ltda",
+            "cnpj": "91.840.132/0001-87",
+            "finalidade": "Centro de Referência da Mulher (Desenvolvimento Social)",
+            "valor_mensal": 3200.0,
+            "periodo": "Contrato novo de 12 meses (Dispensa 67/2023)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf"
+          },
+          {
+            "imovel": "Centro Municipal de Inovação, Tecnologia e Economia Criativa (Educar e Empreender)",
+            "locador": "Incorporadora MRubin Ltda",
+            "cnpj": "48.999.728/0001-03",
+            "finalidade": "Centro de inovação/educação (à época ainda não em funcionamento)",
+            "valor_mensal": 45000.0,
+            "periodo": "Contrato de 60 meses (Dispensa 80/2023)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf"
+          },
+          {
+            "imovel": "Sede da Secretaria de Educação",
+            "locador": "Paulo Inchauspe Schneider - ME",
+            "finalidade": "Sede da Secretaria de Educação (maior secretaria)",
+            "valor_mensal": 27663.34,
+            "periodo": "4º aditivo (Dispensa 306/2018); antiga sede na SUCV (Rua Venâncio Aires) em reforma",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf"
+          },
+          {
+            "imovel": "Ambulatório de Saúde Mental / Acolhe Saúde",
+            "locador": "Habitalar Imóveis Ltda",
+            "cnpj": "88.686.589/0001-74",
+            "finalidade": "Ambulatório de Saúde Mental e Acolhe Saúde",
+            "valor_mensal": 9180.98,
+            "periodo": "8º aditivo (Dispensa 54/2016)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202308021137331525.pdf"
+          },
+          {
+            "imovel": "Imóvel da Secretaria de Licenciamento e Desburocratização (2º imóvel)",
+            "locador": "Carlos Edson Lopes Gudergues",
+            "finalidade": "Licenciamento e Desburocratização (anexo)",
+            "valor_mensal": 4038.58,
+            "periodo": "1º aditivo (Dispensa 50/2022)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202308021137331525.pdf"
+          },
+          {
+            "imovel": "CAPS Infantil II O Equilibrista",
+            "locador": "Luiz Sobrinho Bittencourt & Cia Ltda",
+            "finalidade": "CAPS Infantil (Saúde mental)",
+            "valor_mensal": 16798.34,
+            "periodo": "9º aditivo (Dispensa 305/2018)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf"
+          },
+          {
+            "imovel": "ESF Pinheiro Machado",
+            "locador": "Jane Petrucci Braghirolli da Silva",
+            "finalidade": "Estratégia Saúde da Família (Atenção Básica)",
+            "valor_mensal": 7698.24,
+            "periodo": "11º aditivo (Dispensa 45/2013)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf"
+          },
+          {
+            "imovel": "Projeto Emancipar / Banco de Alimentos",
+            "locador": "Nelci Peripolli e Cia Ltda ME",
+            "cnpj": "95.605.697/0001-30",
+            "finalidade": "Banco de Alimentos (Desenvolvimento Social)",
+            "valor_mensal": 2586.91,
+            "periodo": "13º aditivo (Dispensa 30/2010)",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202306071100541517.pdf"
+          },
+          {
+            "imovel": "Imóvel da Saúde (Dispensa 237/2005)",
+            "locador": "Edilon Donaduzzi e Vania Rozeles Donaduzzi",
+            "finalidade": "Saúde",
+            "valor_mensal": 8500.0,
+            "periodo": "21º aditivo",
+            "fonte": "http://www.santamaria.rs.gov.br/arquivos/baixar-arquivo/contasPublicas/CO202308021137331525.pdf"
+          }
+        ],
         "fontes": [
           "https://www.santamaria.rs.gov.br/transparencia/despesa/empenho",
           "https://www.santamaria.rs.gov.br/transparencia/despesa/despesa-por-categoria",

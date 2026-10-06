@@ -174,6 +174,23 @@
       if (imv.fonte) html += '<div class="sub" style="margin-top:6px"><a href="' + esc(imv.fonte) + '" target="_blank" rel="noopener">' + esc(imv.fonte) + '</a></div>';
     }
 
+    // contratos detalhados (locador + endereço, fonte primária)
+    var con = al.contratos_detalhados || [];
+    if (con.length) {
+      html += '<h3>Detalhamento por contrato (fonte primária)</h3>';
+      html += '<table class="mini"><thead><tr><th>Imóvel / locador</th><th>Mensal</th></tr></thead><tbody>';
+      con.forEach(function (c) {
+        html += '<tr><td>' + esc(c.imovel || "") +
+          (c.endereco ? '<div class="muted" style="font-size:11px">' + esc(c.endereco) + '</div>' : '') +
+          '<div class="muted" style="font-size:11px">Locador: ' + esc(c.locador || "—") + '</div>' +
+          (c.periodo ? '<div class="muted" style="font-size:11px">' + esc(c.periodo) + '</div>' : '') +
+          (c.nota ? '<div class="muted" style="font-size:11px">' + esc(c.nota) + '</div>' : '') +
+          (c.fonte ? '<div class="sub" style="margin-top:2px"><a href="' + esc(c.fonte) + '" target="_blank" rel="noopener">fonte</a></div>' : '') +
+          '</td><td class="money">' + fmtMoney(c.valor_mensal) + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+
     // fontes
     var src = al.fontes || g.fontes || [];
     if (src.length) {
