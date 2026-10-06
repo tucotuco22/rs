@@ -147,6 +147,12 @@ body { display: flex; overflow: hidden; }
   margin: 6px 0 10px;
 }
 .gastos-note.warn { background: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.3); color: #fde68a; }
+.gastos-grupo {
+  margin: 10px 0 4px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #7dd3fc;
+}
 .gastos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .gastos-cell { background: var(--bg-hover); border-radius: 8px; padding: 10px; }
 .gastos-cell .label { font-size: 11px; color: var(--muted); }

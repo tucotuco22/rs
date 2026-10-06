@@ -156,6 +156,24 @@
       html += '</tbody></table>';
     }
 
+    // imóveis alugados (agrupado por categoria)
+    var imv = al.imoveis_alugados || null;
+    if (imv && imv.grupos && imv.grupos.length) {
+      html += '<h3>Imóveis alugados' + (imv.referencia ? ' · ' + esc(imv.referencia) : '') + '</h3>';
+      if (imv.nota) html += '<div class="gastos-note">' + esc(imv.nota) + '</div>';
+      imv.grupos.forEach(function (gr) {
+        html += '<div class="gastos-grupo">' + esc(gr.categoria || "") +
+          (gr.total_mensal ? ' <span class="money">(' + fmtMoney(gr.total_mensal) + '/mês)</span>' : '') + '</div>';
+        html += '<table class="mini"><thead><tr><th>Imóvel</th><th>Uso</th><th>Mensal</th></tr></thead><tbody>';
+        (gr.itens || []).forEach(function (it) {
+          html += '<tr><td>' + esc(it.imovel || "") + '</td><td>' + esc(it.finalidade || "") + '</td>' +
+            '<td class="money">' + fmtMoney(it.valor_mensal) + '</td></tr>';
+        });
+        html += '</tbody></table>';
+      });
+      if (imv.fonte) html += '<div class="sub" style="margin-top:6px"><a href="' + esc(imv.fonte) + '" target="_blank" rel="noopener">' + esc(imv.fonte) + '</a></div>';
+    }
+
     // fontes
     var src = al.fontes || g.fontes || [];
     if (src.length) {

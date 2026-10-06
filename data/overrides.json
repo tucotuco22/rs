@@ -21,6 +21,112 @@
           { "credor": "Imobiliária Gallina Ltda.", "cnpj": "89.799.373/0001-88", "valor": 16800.00, "periodo": "2024–2026" },
           { "credor": "Imobiliária Vista Ltda.", "cnpj": "44.572.738/0001-07", "valor": 14864.52, "periodo": "2024–2026" }
         ],
+        "imoveis_alugados": {
+          "referencia": "julho/2023",
+          "nota": "Levantamento de 15/07/2023: 55 imóveis alugados, com custo de cerca de R$ 660 mil/mês e R$ 8 milhões/ano (em 2018 eram 29 imóveis e R$ 2 milhões/ano). A prefeitura tem 141 prédios próprios. Valores mensais por imóvel abaixo.",
+          "fonte": "https://diariosm.com.br/noticias/economia/alugueis_de_imoveis_custam_r_8_milhoes_por_ano_aos_cofres_da_prefeitura_de_santa_maria.529868",
+          "grupos": [
+            {
+              "categoria": "Escolas (educação)",
+              "total_mensal": 193890.37,
+              "itens": [
+                { "imovel": "Salas do prédio do Instituto São José", "finalidade": "EMEF Ione Medianeira Parcianello", "valor_mensal": 54064.20 },
+                { "imovel": "Imóvel para a EMEF Major Tancredo Penna de Moraes", "finalidade": "Escola interditada (distrito de Palma)", "valor_mensal": 58018.00 },
+                { "imovel": "EMEF Pão dos Pobres Santo Antônio", "finalidade": "Sede da escola", "valor_mensal": 40123.17 },
+                { "imovel": "Salas do prédio da Fapas (Faculdade Palotina)", "finalidade": "EMEF Sérgio Lopes", "valor_mensal": 41685.00 }
+              ]
+            },
+            {
+              "categoria": "Sedes de secretarias",
+              "total_mensal": 146746.81,
+              "itens": [
+                { "imovel": "Sec. de Licenciamento e Desburocratização", "finalidade": "17 salas em prédio próximo à prefeitura", "valor_mensal": 32065.74 },
+                { "imovel": "Sec. de Educação", "finalidade": "Sede (a antiga, na SUCV/Rua Venâncio Aires, está em reforma)", "valor_mensal": 27663.34 },
+                { "imovel": "Sec. de Mobilidade Urbana", "finalidade": "Sede", "valor_mensal": 26267.97 },
+                { "imovel": "Sec. de Desenvolvimento Social", "finalidade": "Sede", "valor_mensal": 15000.00 },
+                { "imovel": "Sec. de Meio Ambiente", "finalidade": "Sede", "valor_mensal": 13658.90 },
+                { "imovel": "Sec. de Desenvolvimento Social (CadÚnico)", "finalidade": "Cadastro Único", "valor_mensal": 10708.92 },
+                { "imovel": "Sec. de Cultura", "finalidade": "Sede", "valor_mensal": 10176.52 },
+                { "imovel": "Sec. de Esporte e Lazer", "finalidade": "Sede", "valor_mensal": 7166.84 },
+                { "imovel": "Sec. de Licenciamento e Desburocratização (2º imóvel)", "finalidade": "Anexo", "valor_mensal": 4038.58 }
+              ]
+            },
+            {
+              "categoria": "Saúde (UBS, ESF, CAPS, farmácias e ambulatórios)",
+              "itens": [
+                { "imovel": "CAPS Infantil II O Equilibrista", "finalidade": "Saúde mental", "valor_mensal": 16798.34 },
+                { "imovel": "Vigilância Sanitária", "finalidade": "Serviço de saúde", "valor_mensal": 13326.63 },
+                { "imovel": "CAPS Ad II Caminhos do Sol", "finalidade": "Saúde mental", "valor_mensal": 12285.20 },
+                { "imovel": "Setor de Imunizações", "finalidade": "Serviço de saúde", "valor_mensal": 11408.05 },
+                { "imovel": "CAPS II Prado Veppo", "finalidade": "Saúde mental", "valor_mensal": 10387.20 },
+                { "imovel": "Ambulatório Transcender", "finalidade": "Saúde", "valor_mensal": 10000.00 },
+                { "imovel": "Farmácia Municipal", "finalidade": "Dispensação de medicamentos", "valor_mensal": 9756.87 },
+                { "imovel": "CAPS Ad II Cia do Recomeço", "finalidade": "Saúde mental", "valor_mensal": 9557.32 },
+                { "imovel": "Ambulatório Saúde Mental e Acolhe Saúde", "finalidade": "Saúde", "valor_mensal": 9180.98 },
+                { "imovel": "NEPeS + Policlínicas", "finalidade": "Educação permanente em saúde", "valor_mensal": 8340.00 },
+                { "imovel": "ESF Pinheiro Machado", "finalidade": "Atenção básica", "valor_mensal": 7698.24 },
+                { "imovel": "Centro de Atendimento à Mulher", "finalidade": "Saúde", "valor_mensal": 7058.50 },
+                { "imovel": "Acolhe Saúde", "finalidade": "Saúde", "valor_mensal": 5300.00 },
+                { "imovel": "Farmácia de Medicamentos Municipais", "finalidade": "Dispensação de medicamentos", "valor_mensal": 5203.09 },
+                { "imovel": "UBS Centro Social Urbano Maria Ribas de Nardin", "finalidade": "Atenção básica", "valor_mensal": 3651.80 },
+                { "imovel": "ESF Vila Santos", "finalidade": "Atenção básica", "valor_mensal": 2520.27 },
+                { "imovel": "ESF São João", "finalidade": "Atenção básica", "valor_mensal": 1700.00 },
+                { "imovel": "ESF Vila Urlândia", "finalidade": "Atenção básica", "valor_mensal": 1500.00 },
+                { "imovel": "ESF Santo Antão", "finalidade": "Atenção básica", "valor_mensal": 1209.23 }
+              ]
+            },
+            {
+              "categoria": "Assistência social (CRAS, CREAS e conselhos tutelares)",
+              "itens": [
+                { "imovel": "CREAS (Centro de Referência Especializado de Assistência Social)", "finalidade": "Assistência social", "valor_mensal": 8709.20 },
+                { "imovel": "Casa dos Conselhos Municipais", "finalidade": "Conselhos", "valor_mensal": 7000.00 },
+                { "imovel": "Conselho Tutelar Centro", "finalidade": "Conselho tutelar", "valor_mensal": 4485.00 },
+                { "imovel": "Programa Mesa Brasil", "finalidade": "Segurança alimentar", "valor_mensal": 3203.89 },
+                { "imovel": "Centro de Referência da Mulher", "finalidade": "Assistência social", "valor_mensal": 3200.00 },
+                { "imovel": "CRAS Norte", "finalidade": "Assistência social", "valor_mensal": 2871.22 },
+                { "imovel": "Conselho Tutelar Oeste", "finalidade": "Conselho tutelar", "valor_mensal": 2786.53 },
+                { "imovel": "Projeto Emancipar — Banco de Alimentos", "finalidade": "Segurança alimentar", "valor_mensal": 2586.91 },
+                { "imovel": "Conselho Tutelar Leste", "finalidade": "Conselho tutelar", "valor_mensal": 2377.90 }
+              ]
+            },
+            {
+              "categoria": "Educação (programas e conselhos)",
+              "itens": [
+                { "imovel": "Centro Municipal de Inovação, Tecnologia e Economia Criativa Educacional (Empreender)", "finalidade": "Educação (à época ainda não em funcionamento)", "valor_mensal": 45000.00 },
+                { "imovel": "Praem (Programa de Atendimento Especializado Municipal)", "finalidade": "Educação", "valor_mensal": 8900.00 },
+                { "imovel": "Conselho Municipal de Educação", "finalidade": "Educação", "valor_mensal": 1310.86 }
+              ]
+            },
+            {
+              "categoria": "Administração, gestão de pessoas e gabinete",
+              "itens": [
+                { "imovel": "CENTRAS (perícia médica, medicina do trabalho e segurança do trabalho)", "finalidade": "Atenção à saúde do servidor", "valor_mensal": 9880.62 },
+                { "imovel": "Coordenadoria de Previdência e Saúde", "finalidade": "Gestão de pessoas", "valor_mensal": 2200.00 },
+                { "imovel": "Junta de Serviço Militar", "finalidade": "Gabinete do prefeito", "valor_mensal": 1474.35 }
+              ]
+            },
+            {
+              "categoria": "Almoxarifados e depósitos",
+              "total_mensal": 39602.71,
+              "itens": [
+                { "imovel": "Almoxarifado Central", "finalidade": "Estoque", "valor_mensal": 15000.00 },
+                { "imovel": "Depósito de Bens Móveis Inservíveis", "finalidade": "Estoque", "valor_mensal": 7859.73 },
+                { "imovel": "Almoxarifado Médico-Hospitalar (2º)", "finalidade": "Saúde", "valor_mensal": 6515.49 },
+                { "imovel": "Pavilhão da Sec. de Meio Ambiente", "finalidade": "Meio ambiente", "valor_mensal": 5429.38 },
+                { "imovel": "Almoxarifado Médico-Hospitalar", "finalidade": "Saúde", "valor_mensal": 4798.11 }
+              ]
+            },
+            {
+              "categoria": "Arquivos e garagem",
+              "total_mensal": 27855.40,
+              "itens": [
+                { "imovel": "Arquivo Municipal", "finalidade": "Documentos da administração", "valor_mensal": 18555.40 },
+                { "imovel": "Arquivo da Sec. de Licenciamento e Desburocratização", "finalidade": "Documentos", "valor_mensal": 7800.00 },
+                { "imovel": "Garagem de veículos (Meio Ambiente + Licenciamento)", "finalidade": "Frota", "valor_mensal": 1500.00 }
+              ]
+            }
+          ]
+        },
         "fontes": [
           "https://www.santamaria.rs.gov.br/transparencia/despesa/empenho",
           "https://www.santamaria.rs.gov.br/transparencia/despesa/despesa-por-categoria",
