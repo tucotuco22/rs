@@ -6,6 +6,7 @@
   var geoLayer = null;
   var features = [];
   var nameIndex = {}; // nome normalizado -> feature
+  var codeIndex = {}; // codigo_ibge -> layer
   var selected = null;
   var map = null;
   var clips = null;
@@ -97,6 +98,7 @@
     var html = "";
     html += '<div class="card"><h2>' + esc(props.nome) + '</h2>';
     html += '<p class="sub">IBGE ' + esc(props.codigo_ibge) + '</p>';
+    html += '<button class="share-btn" data-code="' + esc(props.codigo_ibge) + '" title="Copiar link para compartilhar este município">🔗 Copiar link</button>';
 
     html += '<h3>Prefeito(a)</h3>';
     html += personRow(props.prefeito.nome_urna || props.prefeito.nome, props.prefeito.partido, props.prefeito.mandato);
@@ -123,6 +125,8 @@
     }
 
     el.innerHTML = html;
+    var sb = el.querySelector(".share-btn");
+    if (sb) sb.addEventListener("click", function () { copyShareLink(sb.dataset.code, sb); });
   }
 
   function renderGastos(g) {
@@ -325,6 +329,49 @@
     return html;
   }
 
+  /* ---------- compartilhamento de município ---------- */
+  function shareURL(code) {
+    return location.origin + location.pathname + "#municipio=" + code;
+  }
+
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  function copyShareLink(code, btn) {
+    var url = shareURL(code);
+    function done() {
+      var old = btn.textContent;
+      btn.textContent = "✓ Link copiado!";
+      btn.classList.add("is-copied");
+      setTimeout(function () {
+        btn.textContent = old;
+        btn.classList.remove("is-copied");
+      }, 1800);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(done).catch(function () { fallbackCopy(url); done(); });
+    } else {
+      fallbackCopy(url);
+      done();
+    }
+  }
+
+  function applyHash() {
+    var m = (location.hash || "").match(/municipio=([0-9]+)/);
+    if (m && codeIndex[m[1]]) {
+      selectFeature(codeIndex[m[1]], true);
+    }
+  }
+
   /* ---------- seleção ---------- */
   function selectFeature(layer, fit) {
     if (selected && selected._rsSelected) {
@@ -338,6 +385,8 @@
     renderMunicipio(layer.feature.properties);
     showTab("municipio");
     layer.openPopup();
+    var code = layer.feature.properties.codigo_ibge;
+    if (code) history.replaceState(null, "", "#municipio=" + code);
   }
 
   var TAB_PANELS = { estado: "panelEstado", municipio: "panelMunicipio", clipagem: "panelClipagem" };
@@ -370,6 +419,7 @@
       onEachFeature: function (feature, layer) {
         features.push(feature);
         nameIndex[norm(feature.properties.nome)] = layer;
+        if (feature.properties.codigo_ibge) codeIndex[feature.properties.codigo_ibge] = layer;
         layer.bindPopup(popupHTML(feature.properties));
         layer.on("click", function () { selectFeature(layer, false); });
         layer.on("mouseover", function (e) {
@@ -392,6 +442,7 @@
       renderEstado();
       geoLayer.addData(res[1]);
       renderLegend();
+      applyHash();
     }).catch(function (err) {
       document.getElementById("panelEstado").innerHTML =
         '<div class="empty">Erro ao carregar dados: ' + esc(err.message) + '</div>';
@@ -448,5 +499,6 @@
     setupSearch();
     setupUI();
     renderMunicipio(null);
+    window.addEventListener("hashchange", applyHash);
   });
 })();
