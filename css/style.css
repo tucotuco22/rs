@@ -210,6 +210,59 @@ a:hover { text-decoration: underline; }
 .leaflet-popup-content { margin: 12px 14px; }
 .leaflet-popup-content h3 { margin: 0 0 6px; font-size: 15px; }
 
+/* ---------- Clipagem ---------- */
+.clip-filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.chip {
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  cursor: pointer;
+}
+.chip.is-active { background: var(--accent); border-color: var(--accent); color: #06283d; font-weight: 600; }
+
+.clip-list { list-style: none; margin: 8px 0 0; padding: 0; }
+.clip-item {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 11px 12px;
+  margin-bottom: 10px;
+  background: var(--bg);
+}
+.clip-item__head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 6px; }
+.clip-tipo {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+}
+.clip-tipo--noticia { color: #7dd3fc; }
+.clip-tipo--comunicado { color: #c4b5fd; }
+.clip-tipo--post { color: #f9a8d4; }
+.clip-tipo--video { color: #fbbf24; }
+.clip-tipo--entrevista { color: #86efac; }
+.clip-tipo--agenda { color: #fca5a5; }
+.clip-date { font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+.clip-title { font-size: 14px; font-weight: 600; line-height: 1.35; }
+.clip-fonte { font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+.clip-resumo { font-size: 12.5px; color: #cbd5e1; line-height: 1.5; margin: 7px 0 0; }
+.clip-tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+.tag {
+  font-size: 10.5px;
+  padding: 1px 7px;
+  border-radius: 4px;
+  background: rgba(56,189,248,0.08);
+  border: 1px solid rgba(56,189,248,0.2);
+  color: #7dd3fc;
+}
+.clip-person h2 { font-size: 16px; }
+
 @media (max-width: 820px) {
   .sidebar { position: absolute; left: 0; top: 0; width: 100%; min-width: 0; }
   .sidebar.is-closed { margin-left: -100%; }

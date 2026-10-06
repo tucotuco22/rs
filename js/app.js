@@ -8,6 +8,8 @@
   var nameIndex = {}; // nome normalizado -> feature
   var selected = null;
   var map = null;
+  var clips = null;
+  var clipFilter = "todos";
 
   var PARTY_COLORS = {
     "PT": "#e0342e", "PL": "#2c5fae", "MDB": "#3f7d3a", "PP": "#2a4f9e",
@@ -199,6 +201,94 @@
     return html;
   }
 
+  /* ---------- clipagem ---------- */
+  var TIPO_LABELS = {
+    "noticia": "Notícia",
+    "comunicado": "Comunicação oficial",
+    "post": "Post em rede social",
+    "video": "Vídeo",
+    "entrevista": "Entrevista",
+    "agenda": "Agenda"
+  };
+
+  function loadClipagem() {
+    fetch("clipagem/clips.json").then(function (r) { return r.json(); }).then(function (d) {
+      clips = d;
+      renderClipagem();
+    }).catch(function () {
+      document.getElementById("panelClipagem").innerHTML =
+        '<div class="empty">Clipagem não encontrada.</div>';
+    });
+  }
+
+  function clipagemItens() {
+    var all = [];
+    (clips.pessoas || []).forEach(function (p) {
+      (p.itens || []).forEach(function (it) { all.push({ pessoa: p, item: it }); });
+    });
+    all.sort(function (a, b) {
+      var da = String(a.item.data || ""), db = String(b.item.data || "");
+      return da < db ? 1 : (da > db ? -1 : 0);
+    });
+    if (clipFilter !== "todos") all = all.filter(function (x) { return x.item.tipo === clipFilter; });
+    return all;
+  }
+
+  function renderClipagem() {
+    var el = document.getElementById("panelClipagem");
+    if (!clips || !clips.pessoas || !clips.pessoas.length) {
+      el.innerHTML = '<div class="empty">Nenhuma clipagem cadastrada ainda.</div>';
+      return;
+    }
+    var tipos = ["todos", "noticia", "comunicado", "post", "video", "entrevista", "agenda"];
+    var html = '<div class="clip-filters">' + tipos.map(function (t) {
+      var label = t === "todos" ? "Todos" : TIPO_LABELS[t] || t;
+      var active = clipFilter === t ? " is-active" : "";
+      return '<button class="chip' + active + '" data-tipo="' + t + '">' + label + '</button>';
+    }).join("") + '</div>';
+
+    (clips.pessoas || []).forEach(function (p) {
+      html += '<div class="card clip-person"><h2>' + esc(p.nome_completo || p.nome) + '</h2>';
+      html += '<p class="sub">' + esc(p.cargo || "") + ' · ' + esc(p.partido || "") + '</p>';
+      if (p.resumo) html += '<p class="clip-resumo">' + esc(p.resumo) + '</p>';
+
+      var itens = (p.itens || []).slice().sort(function (a, b) {
+        return String(a.data) < String(b.data) ? 1 : -1;
+      });
+      if (clipFilter !== "todos") itens = itens.filter(function (x) { return x.tipo === clipFilter; });
+
+      if (!itens.length) {
+        html += '<p class="sub">Sem itens deste tipo.</p>';
+      } else {
+        html += '<ol class="clip-list">';
+        itens.forEach(function (it) { html += clipItemHTML(it); });
+        html += '</ol>';
+      }
+      html += '</div>';
+    });
+
+    el.innerHTML = html;
+    el.querySelectorAll(".chip").forEach(function (c) {
+      c.addEventListener("click", function () {
+        clipFilter = c.dataset.tipo;
+        renderClipagem();
+      });
+    });
+  }
+
+  function clipItemHTML(it) {
+    var tipo = it.tipo || "noticia";
+    var html = '<li class="clip-item">';
+    html += '<div class="clip-item__head"><span class="clip-tipo clip-tipo--' + esc(tipo) + '">' + esc(TIPO_LABELS[tipo] || tipo) + '</span>';
+    html += '<span class="clip-date">' + esc(it.data || "") + '</span></div>';
+    html += '<div class="clip-title"><a href="' + esc(it.url) + '" target="_blank" rel="noopener">' + esc(it.titulo) + '</a></div>';
+    html += '<div class="clip-fonte">' + esc(it.fonte || "") + '</div>';
+    if (it.resumo) html += '<p class="clip-resumo">' + esc(it.resumo) + '</p>';
+    if (it.tags && it.tags.length) html += '<div class="clip-tags">' + it.tags.map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join("") + '</div>';
+    html += '</li>';
+    return html;
+  }
+
   /* ---------- seleção ---------- */
   function selectFeature(layer, fit) {
     if (selected && selected._rsSelected) {
@@ -210,23 +300,17 @@
     layer.setStyle({ weight: 3, color: "#f8fafc", fillOpacity: 0.55 });
     if (fit) map.fitBounds(layer.getBounds(), { padding: [30, 30], maxZoom: 12 });
     renderMunicipio(layer.feature.properties);
-    showMunicipioTab();
+    showTab("municipio");
     layer.openPopup();
   }
 
-  function showMunicipioTab() {
-    document.querySelectorAll(".tab").forEach(function (t) {
-      t.classList.toggle("is-active", t.dataset.tab === "municipio");
+  var TAB_PANELS = { estado: "panelEstado", municipio: "panelMunicipio", clipagem: "panelClipagem" };
+  function showTab(name) {
+    Object.keys(TAB_PANELS).forEach(function (k) {
+      var t = document.querySelector('.tab[data-tab="' + k + '"]');
+      if (t) t.classList.toggle("is-active", k === name);
+      document.getElementById(TAB_PANELS[k]).hidden = (k !== name);
     });
-    document.getElementById("panelEstado").hidden = true;
-    document.getElementById("panelMunicipio").hidden = false;
-  }
-  function showEstadoTab() {
-    document.querySelectorAll(".tab").forEach(function (t) {
-      t.classList.toggle("is-active", t.dataset.tab === "estado");
-    });
-    document.getElementById("panelEstado").hidden = false;
-    document.getElementById("panelMunicipio").hidden = true;
   }
 
   /* ---------- init ---------- */
@@ -311,10 +395,7 @@
   /* ---------- tabs e toggle ---------- */
   function setupUI() {
     document.querySelectorAll(".tab").forEach(function (t) {
-      t.addEventListener("click", function () {
-        if (t.dataset.tab === "municipio") showMunicipioTab();
-        else showEstadoTab();
-      });
+      t.addEventListener("click", function () { showTab(t.dataset.tab); });
     });
     var toggle = document.getElementById("sidebarToggle");
     var sidebar = document.getElementById("sidebar");
@@ -327,6 +408,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     initMap();
     loadData();
+    loadClipagem();
     setupSearch();
     setupUI();
     renderMunicipio(null);

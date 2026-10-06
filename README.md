@@ -10,6 +10,7 @@ Publicado como **site estático** (Leaflet + GeoJSON) no **GitHub Pages**.
 - **Senadores**: os 3 senadores atuais e os 2 eleitos em outubro de 2026.
 - **497 municípios**: prefeito(a) e vice-prefeito(a) eleitos para o mandato 2025–2028 (partido, coligação), coloridos por partido.
 - **Gastos da prefeitura**: dados de aluguel/locação de imóveis de **Santa Maria/RS** (estrutura pronta para expandir a outros municípios).
+- **Clipagem**: linha do tempo de material sobre o governador eleito — notícias, comunicações oficiais, posts, vídeos, entrevistas e agenda.
 
 ## Estrutura do repositório
 
@@ -27,6 +28,8 @@ rs/
 ├── scripts/                    # Pipeline de dados (regeneração)
 │   ├── build_data.py           # TSE + IBGE → municipios.json e estado.json
 │   └── build_geojson.py        # Mescla dados na malha geográfica
+├── clipagem/                   # Arquivo de clipping (versionado)
+│   └── clips.json              # Itens por pessoa (governador, etc.)
 └── README.md
 ```
 
@@ -89,6 +92,44 @@ python3 scripts/build_geojson.py
 ```
 
 Para adicionar gastos de outro município, insira o objeto `gastos` no registro correspondente (ou crie um override) seguindo o mesmo esquema — o painel do site renderiza automaticamente.
+
+## Clipagem
+
+A clipagem é um arquivo de material sobre políticos, versionado no git (cada item adicionado vira um commit). Fica em `clipagem/clips.json`, com uma entrada por pessoa:
+
+```jsonc
+{
+  "atualizado_em": "2026-10-06",
+  "pessoas": [
+    {
+      "id": "zucco",
+      "nome_completo": "Luciano Lorenzini Zucco",
+      "cargo": "Governador eleito do Rio Grande do Sul (2027–2030)",
+      "partido": "PL",
+      "resumo": "…",
+      "itens": [
+        {
+          "id": "2026-10-04-agenciabrasil",
+          "data": "2026-10-04",                 // data de publicação
+          "tipo": "noticia",                    // noticia | comunicado | post | video | entrevista | agenda
+          "titulo": "…",
+          "fonte": "Agência Brasil",
+          "url": "https://…",
+          "resumo": "…",
+          "tags": ["eleição", "resultado"]
+        }
+      ]
+    }
+  ]
+}
+```
+
+Para adicionar material:
+
+1. Edite `clipagem/clips.json` e acrescente um objeto no array `itens` da pessoa (ou crie uma nova pessoa em `pessoas`).
+2. `git add clipagem/clips.json && git commit -m "clipagem: <título>"` e `git push`.
+
+O site exibe a clipagem na aba **Clipagem**, com filtro por tipo e linha do tempo ordenada por data. Fontes úteis para acompanhar: [Agência de Notícias do RS](https://estado.rs.gov.br/ultimas-noticias), [Agenda do Governador](https://estado.rs.gov.br/agenda-do-governador) e a imprensa.
 
 ## Executar localmente
 

@@ -1,0 +1,95 @@
+{
+  "atualizado_em": "2026-10-06",
+  "pessoas": [
+    {
+      "id": "zucco",
+      "nome": "Zucco",
+      "nome_completo": "Luciano Lorenzini Zucco",
+      "cargo": "Governador eleito do Rio Grande do Sul (2027–2030)",
+      "partido": "PL",
+      "resumo": "Militar reformado, natural de Alegrete (RS), 52 anos. Ex-deputado estadual e deputado federal (eleito em 2022). Eleito governador em 1º turno em 04/10/2026, com 58,05% dos votos válidos (3.516.048 votos). Posse prevista para 06/01/2027.",
+      "itens": [
+        {
+          "id": "2026-10-04-agenciabrasil",
+          "data": "2026-10-04",
+          "tipo": "noticia",
+          "titulo": "No Rio Grande do Sul, Luciano Zucco é eleito governador em 1º turno",
+          "fonte": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/luciano-zucco-e-eleito-governador-do-rs",
+          "resumo": "Com 91,53% das urnas apuradas, Zucco (PL) obteve 57,88% dos votos válidos, contra Juliana Brizola (PDT) com 31,88% e Gabriel Souza (MDB) com 8,40%. Militar reformado, foi deputado estadual e, em 2022, elegeu-se deputado federal.",
+          "tags": ["eleição", "resultado", "1º turno"]
+        },
+        {
+          "id": "2026-10-04-estado-rs",
+          "data": "2026-10-04",
+          "tipo": "comunicado",
+          "titulo": "Luciano Zucco é eleito em primeiro turno governador do Estado",
+          "fonte": "Governo do Estado do RS (Secom)",
+          "url": "https://estado.rs.gov.br/luciano-zucco-e-eleito-em-primeiro-turno-governador-do-estado",
+          "resumo": "Com 100% das urnas apuradas, Zucco obteve 58,05% dos votos válidos, configurando eleição em 1º turno. Posse como chefe do Executivo gaúcho prevista para 06/01/2027. Eduardo Leite cumprimentou o sucessor: 'Os gaúchos fizeram a sua escolha democraticamente e eu desejo êxito ao novo governo'.",
+          "tags": ["eleição", "posse", "transição", "comunicado oficial"]
+        },
+        {
+          "id": "2026-10-05-sbt",
+          "data": "2026-10-05",
+          "tipo": "entrevista",
+          "titulo": "Zucco: 'vamos começar a convidar equipe de transição' no RS",
+          "fonte": "SBT News",
+          "url": "https://sbtnews.sbt.com.br/noticia/eleicoes/zucco-vamos-comecar-a-convidar-equipe-de-transicao-no-rs",
+          "resumo": "Em entrevista, Zucco afirmou que já conversou com Eduardo Leite e começará a definir a equipe de transição e o secretariado. Citou como prioridades a renegociação da dívida do Estado e a criação de um fundo constitucional, além de diálogo com MDB, PSD e PSDB na Assembleia. 'Não esperávamos vencer no primeiro turno. Fiquei muito surpreso e muito feliz.'",
+          "tags": ["transição", "entrevista", "prioridades", "dívida do Estado"]
+        },
+        {
+          "id": "2026-10-05-gzh-video",
+          "data": "2026-10-05",
+          "tipo": "video",
+          "titulo": "Governo do RS: o que muda com a chegada de Luciano Zucco",
+          "fonte": "GZH (GaúchaZH)",
+          "url": "https://gauchazh.clicrbs.com.br/video/governo-do-rs-o-que-muda-com-a-chegada-de-luciano-zucco-cmuv8nur5000001czr0oe769g.html",
+          "resumo": "Vídeo analisa o que muda no governo do Rio Grande do Sul com a chegada de Luciano Zucco ao Palácio Piratini.",
+          "tags": ["vídeo", "análise", "transição"]
+        },
+        {
+          "id": "2026-10-06-radiosolaris",
+          "data": "2026-10-06",
+          "tipo": "noticia",
+          "titulo": "Leite e Zucco fazem primeira reunião para iniciar transição de governo no RS",
+          "fonte": "Rádio Solaris",
+          "url": "https://radiosolaris.com.br/leite-e-zucco-fazem-primeira-reuniao-para-iniciar-transicao-de-governo-no-rs/",
+          "resumo": "Governador Eduardo Leite e o governador eleito Luciano Zucco realizam a primeira reunião para iniciar o processo de transição de governo.",
+          "tags": ["transição", "reunião"]
+        },
+        {
+          "id": "2026-10-06-gzh-agro",
+          "data": "2026-10-06",
+          "tipo": "noticia",
+          "titulo": "Agro na expectativa por início do diálogo com governador eleito",
+          "fonte": "GZH (GaúchaZH)",
+          "url": "https://gauchazh.clicrbs.com.br/colunistas/gisele-loeblein/noticia/2026/10/agro-na-expectativa-por-inicio-do-dialogo-com-governador-eleito-cmuvvnh3c00ee0164msuwbv5b.html",
+          "resumo": "Setor do agronegócio gaúcho aguarda o início do diálogo com o governador eleito Luciano Zucco sobre pautas do setor.",
+          "tags": ["agronegócio", "economia", "diálogo"]
+        },
+        {
+          "id": "2026-10-04-jornaldebrasilia",
+          "data": "2026-10-04",
+          "tipo": "noticia",
+          "titulo": "Luciano Zucco (PL) é eleito governador do Rio Grande do Sul",
+          "fonte": "Jornal de Brasília",
+          "url": "https://jornaldebrasilia.com.br/noticias/politica-e-poder/luciano-zucco-pl-e-eleito-governador-do-rio-grande-do-sul/",
+          "resumo": "Luciano Zucco, do PL, é eleito governador do Rio Grande do Sul nas eleições de 2026.",
+          "tags": ["eleição", "resultado"]
+        },
+        {
+          "id": "2026-10-04-gp1",
+          "data": "2026-10-04",
+          "tipo": "noticia",
+          "titulo": "Luciano Zucco é eleito governador do Rio Grande do Sul",
+          "fonte": "GP1",
+          "url": "https://www.gp1.com.br/eleicoes-2026/noticia/2026/10/4/luciano-zucco-e-eleito-governador-do-rio-grande-do-sul-633166.html",
+          "resumo": "Luciano Zucco é eleito governador do Rio Grande do Sul no 1º turno das eleições de 2026.",
+          "tags": ["eleição", "resultado"]
+        }
+      ]
+    }
+  ]
+}

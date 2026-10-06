@@ -141,7 +141,7 @@ def build_estado():
         "governador": {
             "atual": {
                 "nome": "Eduardo Leite",
-                "partido": "PSDB",
+                "partido": "PSD",
                 "mandato": "2023-2026",
                 "nota": "Mandato vigente até 31/12/2026.",
             },
@@ -151,7 +151,7 @@ def build_estado():
                 "partido": gov["SG_PARTIDO"] if gov else "",
                 "coligacao": gov["NM_COLIGACAO"] if gov else "",
                 "mandato": "2027-2030",
-                "nota": "Eleito em 1º turno em 04/10/2026; posse em 01/01/2027.",
+                "nota": "Eleito em 1º turno em 04/10/2026; posse prevista em 06/01/2027.",
             },
         },
         "vice_governador": {
