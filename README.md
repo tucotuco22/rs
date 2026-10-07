@@ -28,6 +28,7 @@ rs/
 │   ├── municipios.geojson      # Malha IBGE + dados mesclados (para o mapa)
 │   ├── overrides.json          # Correções curadas (cassação, renúncia, gastos)
 │   ├── softwares.json          # Softwares/tecnologia por município
+│   ├── links.json              # Itens/links por município (via workflow)
 │   └── raw/                    # Dados brutos baixados (não versionado)
 ├── scripts/                    # Pipeline de dados (regeneração)
 │   ├── build_data.py           # TSE + IBGE → municipios.json e estado.json
@@ -207,6 +208,20 @@ python3 scripts/clip_diario.py [--dias N]
 - Configuração em `data/diario_config.json` (palavras-chave, municípios e janela em dias).
 - Gera `clipagem/diarios/diarios.json` (estruturado) e `diarios.md` (relatório).
 - Cobertura no RS é parcial: busca por texto (nível 3) em **Porto Alegre** e **Caxias do Sul**; **Canoas, Pelotas e Cachoeirinha** têm só lista (nível 1); **Santa Maria não está coberta**.
+
+## Adicionar itens por município (workflow)
+
+Para adicionar **link + título** a um município sem mexer no código:
+
+1. No repositório, abra **Actions → "Adicionar item a município" → Run workflow**.
+2. Preencha **Município** (nome ou código IBGE), **Título** e **Link (URL)** — e, se quiser, **Fonte** e **Tipo**.
+3. O workflow adiciona em `data/links.json` e faz commit + push automaticamente. O item aparece na seção **"Links e material"** do município no site.
+
+Ou rode localmente:
+
+```bash
+python3 scripts/add_link.py --municipio "Santa Maria" --titulo "Título" --url "https://..."
+```
 
 ## Executar localmente
 

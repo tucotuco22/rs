@@ -1,0 +1,56 @@
+name: Adicionar item a município
+
+on:
+  workflow_dispatch:
+    inputs:
+      municipio:
+        description: 'Município (nome ou código IBGE de 7 dígitos)'
+        required: true
+      titulo:
+        description: 'Título do item'
+        required: true
+      url:
+        description: 'Link (URL)'
+        required: true
+      fonte:
+        description: 'Fonte (opcional)'
+        required: false
+        default: ''
+      tipo:
+        description: 'Tipo do item'
+        required: false
+        default: 'noticia'
+
+permissions:
+  contents: write
+
+jobs:
+  adicionar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Adicionar item
+        run: |
+          python3 scripts/add_link.py \
+            --municipio "${{ github.event.inputs.municipio }}" \
+            --titulo "${{ github.event.inputs.titulo }}" \
+            --url "${{ github.event.inputs.url }}" \
+            --fonte "${{ github.event.inputs.fonte }}" \
+            --tipo "${{ github.event.inputs.tipo }}"
+
+      - name: Commit e push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/links.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma mudança a commitar."
+          else
+            git commit -m "link: ${{ github.event.inputs.municipio }} — ${{ github.event.inputs.titulo }}"
+            git push
+          fi

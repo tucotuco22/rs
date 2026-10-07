@@ -12,6 +12,7 @@
   var clips = null;
   var clipFilter = "todos";
   var vereadores = {}; // codigo_ibge -> [vereador]
+  var links = {}; // codigo_ibge -> [item {titulo,url,fonte,tipo,data}]
 
   var PARTY_COLORS = {
     "PT": "#e0342e", "PL": "#2c5fae", "MDB": "#3f7d3a", "PP": "#2a4f9e",
@@ -146,6 +147,22 @@
         return '<div class="dep">' + esc(v.nome_urna || v.nome) + ' <span class="muted">(' + esc(v.partido) + ')</span></div>';
       }).join("") + '</div>';
       html += '</details></div>';
+    }
+
+    // Links e material
+    var lnk = links[props.codigo_ibge];
+    if (lnk && lnk.length) {
+      html += '<div class="card"><h2>Links e material (' + lnk.length + ')</h2>';
+      lnk.forEach(function (l) {
+        html += '<div class="soft-item"><div class="soft-name"><a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.titulo) + '</a></div>';
+        var meta = [];
+        if (l.fonte) meta.push(esc(l.fonte));
+        if (l.data) meta.push(esc(l.data));
+        if (l.tipo) meta.push(esc(l.tipo));
+        if (meta.length) html += '<div class="muted">' + meta.join(' · ') + '</div>';
+        html += '</div>';
+      });
+      html += '</div>';
     }
 
     if (props.fontes && props.fontes.length) {
@@ -498,9 +515,11 @@
     var p1 = fetch("data/estado.json").then(function (r) { return r.json(); });
     var p2 = fetch("data/municipios.geojson").then(function (r) { return r.json(); });
     var p3 = fetch("data/vereadores.json").then(function (r) { return r.json(); });
-    Promise.all([p1, p2, p3]).then(function (res) {
+    var p4 = fetch("data/links.json").then(function (r) { return r.json(); }).catch(function () { return {}; });
+    Promise.all([p1, p2, p3, p4]).then(function (res) {
       estado = res[0];
       vereadores = res[2];
+      links = res[3];
       renderEstado();
       geoLayer.addData(res[1]);
       renderLegend();
