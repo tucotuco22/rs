@@ -1160,7 +1160,21 @@
     "fontes": [
       "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/04/12/jussara-cacapava-do-avante-e-eleita-prefeita-de-cachoeirinha-em-eleicao-suplementar.ghtml",
       "https://gauchazh.clicrbs.com.br/colunistas/rosane-de-oliveira/noticia/2026/08/tre-reverte-cassacao-e-mantem-prefeita-e-vice-de-cachoeirinha-nos-cargos-cmss21jh8001w01hwn0hw3zkk.html"
-    ]
+    ],
+    "software": {
+      "gestao_municipal": [
+        {
+          "nome": "IPM Sistemas (Atende.Net / sistema de gestão em nuvem)",
+          "fornecedor": "IPM Sistemas",
+          "uso": "Sistema de gestão municipal (IPTU, ITBI, alvarás, protocolos, tesouraria, etc.), 100% em nuvem, implantado em 2020 após vencer licitação.",
+          "fonte": "https://www.oreporter.net/servidores-recebem-capacitacao-sobre-novo-sistema-de-informatica/",
+          "nota": "Também usa eComunica da IPM: https://www.ipm.com.br/noticias/cachoeirinha-rs-implanta-ecomunica-da-ipm-e-moderniza-envio-de-informativos/"
+        }
+      ],
+      "office": [],
+      "video_design": [],
+      "outros": []
+    }
   },
   {
     "codigo_ibge": "4303202",
@@ -1500,6 +1514,36 @@
       "partido_nome": "UNIÃO BRASIL",
       "coligacao": "UNIÃO POR CANOAS",
       "mandato": "2025-2028"
+    },
+    "software": {
+      "gestao_municipal": [
+        {
+          "nome": "Ábaco (portal da transparência / NFS-e)",
+          "fornecedor": "Ábaco (abaco.com.br)",
+          "uso": "Portal da transparência e emissão de NFS-e.",
+          "fonte": "http://sistemas.canoas.rs.gov.br/transparencia/servlet/home",
+          "nota": "Rodapé do portal da transparência exibe o logotipo Ábaco. Edital SIAFIC 266/2021 lista módulos de gestão (cadastros, RH, folha, planejamento e orçamento): https://www.canoas.rs.gov.br/wp-content/uploads/2021/10/EDITAL-266.2021-PROC-61218.2021.pdf"
+        }
+      ],
+      "office": [],
+      "video_design": [],
+      "outros": [
+        {
+          "nome": "SEI (Sistema Eletrônico de Informações)",
+          "uso": "Protocolo eletrônico / processos eletrônicos.",
+          "fonte": "https://www.canoas.rs.gov.br/transparenciadeimoveis/"
+        },
+        {
+          "nome": "CanoasTec (Fundação Municipal de Tecnologia da Informação e Comunicação)",
+          "uso": "Fundação municipal de TI.",
+          "fonte": "https://www.canoas.rs.gov.br/wp-content/uploads/2024/03/EDITAL-020-2024-RP-008-2024-II.pdf"
+        },
+        {
+          "nome": "Site oficial — desenvolvido pela Ondaweb",
+          "uso": "Criação do site (rodapé com logo Ondaweb).",
+          "fonte": "https://www.canoas.rs.gov.br/transparenciadeimoveis/"
+        }
+      ]
     }
   },
   {
@@ -1820,6 +1864,33 @@
       "partido_nome": "UNIÃO BRASIL",
       "coligacao": "JUNTOS POR CAXIAS. JUNTOS NO RUMO CERTO",
       "mandato": "2025-2028"
+    },
+    "software": {
+      "gestao_municipal": [
+        {
+          "nome": "GRP Thema (sistema integrado de gestão pública)",
+          "fornecedor": "Grupo Thema / Pólis (Thema Informática)",
+          "uso": "Sistema integrado de gestão pública (contabilidade, financeiro, administrativo); pagamento de guias municipais via Pix.",
+          "fonte": "https://grp.caxias.rs.gov.br",
+          "nota": "Login do sistema (grp.caxias.rs.gov.br) exibe o logotipo 'Grupo Thema/Polis'. https://www.thema.inf.br/noticias/pagamento-guias-municipais-pix-caxias-do-sul-grp-thema/"
+        }
+      ],
+      "office": [
+        {
+          "nome": "Microsoft (licenciamento)",
+          "fornecedor": "Microsoft",
+          "fonte": "https://www.gov.br/governodigital/pt-br/contratacoes-de-tic/catalogos-de-solucoes-de-tic-com-condicoes-padronizadas-para-licenciamento-de-software/arquivos/microsfot/termos-de-adesao/termo-de-adesao-microsoft-pref-caxias-do-sul.pdf",
+          "nota": "Termo de adesão Microsoft (catálogo gov.br)."
+        }
+      ],
+      "video_design": [],
+      "outros": [
+        {
+          "nome": "GRP Thema (portal/protocolo e gestão)",
+          "uso": "Acesso ao sistema GRP inclui cadastro/gestão; mesma plataforma atende as áreas administrativa e financeira.",
+          "fonte": "https://grp.caxias.rs.gov.br"
+        }
+      ]
     }
   },
   {
@@ -6155,6 +6226,31 @@
       "partido_nome": "PARTIDO SOCIALISMO E LIBERDADE",
       "coligacao": "Nova Frente Popular",
       "mandato": "2025-2028"
+    },
+    "software": {
+      "gestao_municipal": [
+        {
+          "nome": "Sistemas Coinpel (desenvolvimento próprio) + Proges",
+          "fornecedor": "Coinpel (Companhia de Informática de Pelotas)",
+          "uso": "Gestão municipal desenvolvida internamente pela companhia de informática do município; Proges = Programa de Gestão Estratégica (acompanhamento de projetos/PPA).",
+          "fonte": "https://transparencia.pelotas.rs.gov.br",
+          "nota": "Rodapé do portal: 'Desenvolvido pela COINPEL'."
+        }
+      ],
+      "office": [],
+      "video_design": [],
+      "outros": [
+        {
+          "nome": "Projus (portal de serviços ao cidadão)",
+          "uso": "Portal de serviços/formulários online.",
+          "fonte": "https://www.pelotas.rs.gov.br/noticia/proges-e-apresentado-a-prefeitura-de-rio-grande"
+        },
+        {
+          "nome": "Ouvidoria e SIC (Serviço de Informação ao Cidadão)",
+          "uso": "Ouvidoria e pedidos de informação.",
+          "fonte": "https://transparencia.pelotas.rs.gov.br"
+        }
+      ]
     }
   },
   {
@@ -6415,6 +6511,38 @@
       "partido_nome": "PARTIDO LIBERAL",
       "coligacao": "ESTAMOS JUNTOS, PORTO ALEGRE",
       "mandato": "2025-2028"
+    },
+    "software": {
+      "gestao_municipal": [
+        {
+          "nome": "Sigef-Poa (Sistema Integrado de Planejamento e Gestão Fiscal)",
+          "fornecedor": "Minsait (Indra Brasil Soluções e Serviços de Tecnologia)",
+          "uso": "Substitui sistemas do eixo de finanças: elaboração do PPA, Gerência Orçamentária (GOR) e contabilidade; integra orçamento, finanças e contabilidade.",
+          "fonte": "https://www.prefeitura.poa.br/smf/noticias/prefeitura-tera-sistema-integrado-de-planejamento-e-gestao-fiscal",
+          "nota": "Contrato de R$ 9,58 milhões (90% PMAT/BNDES), implantação em 2 anos."
+        }
+      ],
+      "office": [
+        {
+          "nome": "Microsoft (licenças)",
+          "fornecedor": "Microsoft",
+          "fonte": "https://prefeitura.poa.br/sites/default/files/usu_doc/sites/procempa/edital_pe_013-22_licencas_microsoft.pdf",
+          "nota": "Pregão eletrônico 013/22 da Procempa para licenças Microsoft."
+        }
+      ],
+      "video_design": [],
+      "outros": [
+        {
+          "nome": "Procempa (desenvolvimento do site e TI municipal)",
+          "uso": "Site oficial 'desenvolvido pela Procempa'; processamento de dados municipal.",
+          "fonte": "https://www.prefeitura.poa.br/smf/noticias/prefeitura-tera-sistema-integrado-de-planejamento-e-gestao-fiscal"
+        },
+        {
+          "nome": "DOPA (Diário Oficial de Porto Alegre)",
+          "uso": "Diário Oficial eletrônico.",
+          "fonte": "https://www.prefeitura.poa.br/smf/noticias/prefeitura-tera-sistema-integrado-de-planejamento-e-gestao-fiscal"
+        }
+      ]
     }
   },
   {
@@ -7814,6 +7942,31 @@
       },
       "bloqueios": "Total exato de aluguel não isolável publicamente: o subitem 'locação de imóveis' aparece só no detalhe de cada empenho; a API de Dados Abertos de despesas está quebrada e a exportação CSV exige captcha (Turnstile).",
       "extraido_em": "2026-10-06"
+    },
+    "software": {
+      "gestao_municipal": [
+        {
+          "nome": "Pronim (Contabilidade Pública / Transparência / RH)",
+          "fornecedor": "Pronim",
+          "uso": "Contabilidade pública, gestão de pessoal e portal da transparência (Transparência Pública - GOVBR TB).",
+          "fonte": "https://office.santamaria.rs.gov.br/transparencia",
+          "nota": "Links 'pronimtb' no portal; relatórios de contas públicas gerados a partir de 'c:\\pronim\\relatorios'. Há ainda um portal legado em app.topsolutionsrn.com.br (Top Solutions), possivelmente espelho antigo."
+        }
+      ],
+      "office": [],
+      "video_design": [],
+      "outros": [
+        {
+          "nome": "Site/Portal oficial (office.santamaria.rs.gov.br) — desenvolvido pela STI",
+          "uso": "Portal oficial e portal da transparência mantidos pela Secretaria de Tecnologia da Informação.",
+          "fonte": "https://office.santamaria.rs.gov.br/transparencia"
+        },
+        {
+          "nome": "e-SIC / Ouvidoria 156",
+          "uso": "Acesso à informação (demanda-esic) e ouvidoria.",
+          "fonte": "https://office.santamaria.rs.gov.br/transparencia"
+        }
+      ]
     }
   },
   {

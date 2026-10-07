@@ -24,6 +24,7 @@ rs/
 │   ├── municipios.json         # 497 municípios com prefeito e vice
 │   ├── municipios.geojson      # Malha IBGE + dados mesclados (para o mapa)
 │   ├── overrides.json          # Correções curadas (cassação, renúncia, gastos)
+│   ├── softwares.json          # Softwares/tecnologia por município
 │   └── raw/                    # Dados brutos baixados (não versionado)
 ├── scripts/                    # Pipeline de dados (regeneração)
 │   ├── build_data.py           # TSE + IBGE → municipios.json e estado.json
@@ -92,6 +93,23 @@ python3 scripts/build_geojson.py
 ```
 
 Para adicionar gastos de outro município, insira o objeto `gastos` no registro correspondente (ou crie um override) seguindo o mesmo esquema — o painel do site renderiza automaticamente.
+
+### Softwares/tecnologia por município
+
+`data/softwares.json` — chaveado por código IBGE, com 4 categorias:
+
+```jsonc
+{
+  "4316907": {
+    "gestao_municipal": [ { "nome": "Pronim", "fornecedor": "Pronim", "uso": "…", "fonte": "url", "nota": "…" } ],
+    "office": [ { "nome": "Microsoft", "fornecedor": "Microsoft", "fonte": "url" } ],
+    "video_design": [],
+    "outros": [ { "nome": "e-SIC / Ouvidoria", "uso": "…", "fonte": "url" } ]
+  }
+}
+```
+
+Adicione entradas por código IBGE e rode `python3 scripts/build_data.py` + `build_geojson.py`; o painel do município mostra a seção **Software e tecnologia**.
 
 ## Clipagem
 
