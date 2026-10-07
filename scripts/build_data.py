@@ -38,10 +38,19 @@ def load_overrides():
     return {}
 
 
+def load_softwares():
+    p = os.path.join(OUT, "softwares.json")
+    if os.path.exists(p):
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
 def build_municipios():
     rows = load_csv(os.path.join(RAW, "consulta_cand_2024_RS.csv"))
     ibge = json.load(open(os.path.join(RAW, "municipios_ibge.json"), encoding="utf-8"))
     overrides = load_overrides()
+    softwares = load_softwares()
 
     # índice eleitos por município (nome normalizado)
     eleitos = {}
@@ -73,6 +82,10 @@ def build_municipios():
                 rec["vice_prefeito"] = ov["vice_prefeito"]
             if "gastos" in ov:
                 rec["gastos"] = ov["gastos"]
+
+        # softwares/tecnologia do município
+        if m["codigo_ibge"] in softwares:
+            rec["software"] = softwares[m["codigo_ibge"]]
 
         municipios.append(rec)
 

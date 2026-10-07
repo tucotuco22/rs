@@ -19,6 +19,7 @@ for feat in geo["features"]:
         "prefeito": rec.get("prefeito"),
         "vice_prefeito": rec.get("vice_prefeito"),
         "gastos": rec.get("gastos"),
+        "software": rec.get("software"),
         "nota": rec.get("nota"),
         "fontes": rec.get("fontes"),
     }

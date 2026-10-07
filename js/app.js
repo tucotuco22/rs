@@ -118,6 +118,11 @@
       html += renderGastos(props.gastos);
     }
 
+    // Softwares e tecnologia
+    if (props.software) {
+      html += renderSoftware(props.software);
+    }
+
     if (props.fontes && props.fontes.length) {
       html += '<div class="card"><h2>Fontes</h2>' + props.fontes.map(function (u) {
         return '<div class="sub"><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(u) + '</a></div>';
@@ -127,6 +132,36 @@
     el.innerHTML = html;
     var sb = el.querySelector(".share-btn");
     if (sb) sb.addEventListener("click", function () { copyShareLink(sb.dataset.code, sb); });
+  }
+
+  function renderSoftware(sw) {
+    var html = '<div class="card"><h2>Software e tecnologia</h2>';
+    var cats = [
+      ["gestao_municipal", "Gestão municipal (ERP/contábil)"],
+      ["office", "Edição de arquivos / office"],
+      ["video_design", "Edição de vídeo / design"],
+      ["outros", "Outros (site, protocolo, atendimento)"]
+    ];
+    var any = false;
+    cats.forEach(function (c) {
+      var key = c[0], label = c[1];
+      var list = sw[key] || [];
+      if (!list.length) return;
+      any = true;
+      html += '<h3>' + esc(label) + '</h3>';
+      list.forEach(function (s) {
+        html += '<div class="soft-item">';
+        html += '<div class="soft-name">' + esc(s.nome || "") + '</div>';
+        if (s.fornecedor) html += '<div class="muted">' + esc(s.fornecedor) + '</div>';
+        if (s.uso) html += '<div class="muted">' + esc(s.uso) + '</div>';
+        if (s.nota) html += '<div class="muted">' + esc(s.nota) + '</div>';
+        if (s.fonte) html += '<div class="sub" style="margin-top:3px"><a href="' + esc(s.fonte) + '" target="_blank" rel="noopener">fonte</a></div>';
+        html += '</div>';
+      });
+    });
+    if (!any) html += '<p class="sub">Sem dados registrados ainda.</p>';
+    html += '</div>';
+    return html;
   }
 
   function renderGastos(g) {
