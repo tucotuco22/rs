@@ -11,6 +11,7 @@
   var map = null;
   var clips = null;
   var clipFilter = "todos";
+  var vereadores = {}; // codigo_ibge -> [vereador]
 
   var PARTY_COLORS = {
     "PT": "#e0342e", "PL": "#2c5fae", "MDB": "#3f7d3a", "PP": "#2a4f9e",
@@ -75,8 +76,21 @@
     s.eleitos_2026.forEach(function (x) { html += personRow(x.nome_urna || x.nome, x.partido, x.mandato, "eleito"); });
     html += '</div>';
 
-    html += '<div class="card"><h2>Assembleia e Câmara Federal</h2>';
-    html += '<p class="sub">Deputados estaduais (55) e federais (31) eleitos em 2026 — cobertura em expansão.</p></div>';
+    html += '<div class="card"><h2>Deputados</h2>';
+    if (estado.deputados) {
+      html += '<p class="sub">Eleitos em 2026 · mandato 2027–2031</p>';
+      html += '<h3>Federais — ' + estado.deputados.federais.length + '</h3>';
+      html += '<div class="dep-grid">' + estado.deputados.federais.map(function (d) {
+        return '<div class="dep">' + esc(d.nome_urna || d.nome) + ' <span class="muted">(' + esc(d.partido) + ')</span></div>';
+      }).join("") + '</div>';
+      html += '<h3>Estaduais — ' + estado.deputados.estaduais.length + '</h3>';
+      html += '<div class="dep-grid">' + estado.deputados.estaduais.map(function (d) {
+        return '<div class="dep">' + esc(d.nome_urna || d.nome) + ' <span class="muted">(' + esc(d.partido) + ')</span></div>';
+      }).join("") + '</div>';
+    } else {
+      html += '<p class="sub">Sem dados.</p>';
+    }
+    html += '</div>';
 
     el.innerHTML = html;
   }
@@ -121,6 +135,17 @@
     // Softwares e tecnologia
     if (props.software) {
       html += renderSoftware(props.software);
+    }
+
+    // Vereadores
+    var ver = vereadores[props.codigo_ibge];
+    if (ver && ver.length) {
+      html += '<div class="card"><h2>Vereadores (' + ver.length + ')</h2>';
+      html += '<details><summary>Ver lista completa</summary>';
+      html += '<div class="dep-grid">' + ver.map(function (v) {
+        return '<div class="dep">' + esc(v.nome_urna || v.nome) + ' <span class="muted">(' + esc(v.partido) + ')</span></div>';
+      }).join("") + '</div>';
+      html += '</details></div>';
     }
 
     if (props.fontes && props.fontes.length) {
@@ -472,8 +497,10 @@
   function loadData() {
     var p1 = fetch("data/estado.json").then(function (r) { return r.json(); });
     var p2 = fetch("data/municipios.geojson").then(function (r) { return r.json(); });
-    Promise.all([p1, p2]).then(function (res) {
+    var p3 = fetch("data/vereadores.json").then(function (r) { return r.json(); });
+    Promise.all([p1, p2, p3]).then(function (res) {
       estado = res[0];
+      vereadores = res[2];
       renderEstado();
       geoLayer.addData(res[1]);
       renderLegend();

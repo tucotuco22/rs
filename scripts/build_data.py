@@ -147,6 +147,24 @@ def build_estado():
         ]
         eleitos_2026.append(senador(s, sups))
 
+    def deputado(r):
+        return {
+            "nome": r["NM_CANDIDATO"].title(),
+            "nome_urna": r["NM_URNA_CANDIDATO"].title(),
+            "partido": r["SG_PARTIDO"],
+            "partido_nome": r["NM_PARTIDO"],
+            "mandato": "2027-2031",
+        }
+
+    federais = sorted(
+        (deputado(r) for r in rows if r["DS_CARGO"] == "DEPUTADO FEDERAL" and r["DS_SIT_TOT_TURNO"] in ("ELEITO POR QP", "ELEITO POR MÉDIA")),
+        key=lambda x: x["nome_urna"],
+    )
+    estaduais = sorted(
+        (deputado(r) for r in rows if r["DS_CARGO"] == "DEPUTADO ESTADUAL" and r["DS_SIT_TOT_TURNO"] in ("ELEITO POR QP", "ELEITO POR MÉDIA")),
+        key=lambda x: x["nome_urna"],
+    )
+
     estado = {
         "uf": "RS",
         "estado": "Rio Grande do Sul",
@@ -183,6 +201,10 @@ def build_estado():
             ],
             "eleitos_2026": eleitos_2026,
         },
+        "deputados": {
+            "federais": federais,
+            "estaduais": estaduais,
+        },
         "fontes": [
             "https://dadosabertos.tse.jus.br/dataset/candidatos-2026",
             "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/luciano-zucco-e-eleito-governador-do-rs",
@@ -194,6 +216,36 @@ def build_estado():
     print("estado.json escrito.")
 
 
+def build_vereadores():
+    rows = load_csv(os.path.join(RAW, "consulta_cand_2024_RS.csv"))
+    ibge = json.load(open(os.path.join(RAW, "municipios_ibge.json"), encoding="utf-8"))
+    nome2codigo = {norm(m["nome"]): m["codigo_ibge"] for m in ibge}
+
+    vereadores = {}
+    for r in rows:
+        if r["DS_CARGO"] == "VEREADOR" and r["DS_SIT_TOT_TURNO"] in ("ELEITO POR QP", "ELEITO POR MÉDIA"):
+            cod = nome2codigo.get(norm(r["NM_UE"]))
+            if not cod:
+                continue
+            vereadores.setdefault(cod, []).append({
+                "nome": r["NM_CANDIDATO"].title(),
+                "nome_urna": r["NM_URNA_CANDIDATO"].title(),
+                "partido": r["SG_PARTIDO"],
+                "partido_nome": r["NM_PARTIDO"],
+                "mandato": "2025-2028",
+            })
+
+    for cod in vereadores:
+        vereadores[cod].sort(key=lambda x: x["nome_urna"])
+
+    with open(os.path.join(OUT, "vereadores.json"), "w", encoding="utf-8") as f:
+        json.dump(vereadores, f, ensure_ascii=False, indent=1)
+
+    total = sum(len(v) for v in vereadores.values())
+    print(f"vereadores.json: {len(vereadores)} municípios, {total} vereadores")
+
+
 if __name__ == "__main__":
     build_municipios()
     build_estado()
+    build_vereadores()

@@ -158,6 +158,20 @@ body { display: flex; overflow: hidden; }
 }
 .soft-name { font-weight: 600; font-size: 13.5px; margin-bottom: 2px; }
 
+.dep-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; margin: 6px 0 2px; }
+.dep { font-size: 12px; color: var(--text); }
+.dep .muted { color: var(--muted); }
+
+details { margin-top: 4px; }
+details summary {
+  cursor: pointer;
+  font-size: 12.5px;
+  color: var(--accent);
+  user-select: none;
+}
+details summary:hover { text-decoration: underline; }
+details[open] summary { margin-bottom: 6px; }
+
 /* Gastos */
 .gastos-note {
   background: rgba(56,189,248,0.08);

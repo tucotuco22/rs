@@ -93,6 +93,614 @@
       }
     ]
   },
+  "deputados": {
+    "federais": [
+      {
+        "nome": "Jose Alfonso Ebert Hamm",
+        "nome_urna": "Afonso Hamm",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Alceu Moreira Da Silva",
+        "nome_urna": "Alceu Moreira",
+        "partido": "MDB",
+        "partido_nome": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Any Machado Ortiz",
+        "nome_urna": "Any Ortiz",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Alcibio Mesquita Bibo Nunes",
+        "nome_urna": "Bibo Nunes",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Elvino Jose Bohn Gass",
+        "nome_urna": "Bohn Gass",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Luiz Carlos Ghiorzzi Busato",
+        "nome_urna": "Busato",
+        "partido": "UNIÃO",
+        "partido_nome": "UNIÃO BRASIL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Antonio Carlos Gomes Da Silva",
+        "nome_urna": "Carlos Gomes",
+        "partido": "REPUBLICANOS",
+        "partido_nome": "REPUBLICANOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Luis Antonio Franciscatto Covatti",
+        "nome_urna": "Covatti Filho",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Daiana Silva Dos Santos",
+        "nome_urna": "Daiana Santos",
+        "partido": "PCDOB",
+        "partido_nome": "PARTIDO COMUNISTA DO BRASIL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Danrlei De Deus Hinterholz",
+        "nome_urna": "Danrlei",
+        "partido": "PSD",
+        "partido_nome": "PARTIDO SOCIAL DEMOCRÁTICO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Denise Da Silva Pessôa",
+        "nome_urna": "Denise Pessôa",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Diogo Segabinazzi Siqueira",
+        "nome_urna": "Diogo Siqueira",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Felipe Zortéa Camozzato",
+        "nome_urna": "Felipe Camozzato",
+        "partido": "NOVO",
+        "partido_nome": "PARTIDO NOVO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Fernanda Melchionna E Silva",
+        "nome_urna": "Fernanda Melchionna",
+        "partido": "PSOL",
+        "partido_nome": "PARTIDO SOCIALISMO E LIBERDADE",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Giovani Cherini",
+        "nome_urna": "Giovani Cherini",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Gustavo Adolfo Victorino Grehs",
+        "nome_urna": "Gustavo Victorino",
+        "partido": "REPUBLICANOS",
+        "partido_nome": "REPUBLICANOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Jessé Sangalli De Mello",
+        "nome_urna": "Jessé Sangalli",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Juvir Costella",
+        "nome_urna": "Juvir Costella",
+        "partido": "MDB",
+        "partido_nome": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Lucas Bello Redecker",
+        "nome_urna": "Lucas Redecker",
+        "partido": "PSD",
+        "partido_nome": "PARTIDO SOCIAL DEMOCRÁTICO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Marcelo Pires Moraes",
+        "nome_urna": "Marcelo Moraes",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Dionilso Mateus Marcon",
+        "nome_urna": "Marcon",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Maria Do Rosario Nunes",
+        "nome_urna": "Maria Do Rosario",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Mauricio Bedin Marcon",
+        "nome_urna": "Maurício Marcon",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Osmar Gasparini Terra",
+        "nome_urna": "Osmar Terra",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Pedro Bandarra Westphalen",
+        "nome_urna": "Pedro Westphalen",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Marciano Perondi",
+        "nome_urna": "Perondi",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Darci Pompeo De Mattos",
+        "nome_urna": "Pompeo De Mattos",
+        "partido": "PDT",
+        "partido_nome": "PARTIDO DEMOCRÁTICO TRABALHISTA",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Rony De Assis Gabriel",
+        "nome_urna": "Rony Gabriel",
+        "partido": "PODE",
+        "partido_nome": "PODEMOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Sergio Pedro Zambiasi",
+        "nome_urna": "Sergio Zambiasi",
+        "partido": "PODE",
+        "partido_nome": "PODEMOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Antonio Valdeci Oliveira De Oliveira",
+        "nome_urna": "Valdeci Oliveira",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Vilmar Perin Zanchin",
+        "nome_urna": "Vilmar Zanchin",
+        "partido": "MDB",
+        "partido_nome": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+        "mandato": "2027-2031"
+      }
+    ],
+    "estaduais": [
+      {
+        "nome": "Adriane Cerini",
+        "nome_urna": "Adri Cherini",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Adriana Vieira Lara",
+        "nome_urna": "Adriana Lara",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Adão Pretto Filho",
+        "nome_urna": "Adão Pretto",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Aline Leal Fontanella Klemt",
+        "nome_urna": "Ali Klemt",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Roberto Fantinel",
+        "nome_urna": "Beto Fantinel",
+        "partido": "MDB",
+        "partido_nome": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Bruna Jeanine Molz Noal",
+        "nome_urna": "Bruna Molz",
+        "partido": "PODE",
+        "partido_nome": "PODEMOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Martim Todesco Adreani",
+        "nome_urna": "Capitão Martim",
+        "partido": "REPUBLICANOS",
+        "partido_nome": "REPUBLICANOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Cláudio Gilnei Tatsch",
+        "nome_urna": "Cláudio Tatsch",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Nadia Rodrigues Silveira Gerhard",
+        "nome_urna": "Comandante Nádia",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Daiane Mello",
+        "nome_urna": "Daiane Mello",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Ana Luiza Moura Tarouco",
+        "nome_urna": "Delegada Ana Tarouco",
+        "partido": "PSD",
+        "partido_nome": "PARTIDO SOCIAL DEMOCRÁTICO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Nadine Tagliari Farias Anflor",
+        "nome_urna": "Delegada Nadine",
+        "partido": "PSD",
+        "partido_nome": "PARTIDO SOCIAL DEMOCRÁTICO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Rodrigo Lorenzini Zucco",
+        "nome_urna": "Delegado Zucco",
+        "partido": "REPUBLICANOS",
+        "partido_nome": "REPUBLICANOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Diego Dal Piva Da Luz",
+        "nome_urna": "Diego Picucha",
+        "partido": "PDT",
+        "partido_nome": "PARTIDO DEMOCRÁTICO TRABALHISTA",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Dimas Souza Da Costa",
+        "nome_urna": "Dimas Costa",
+        "partido": "PSD",
+        "partido_nome": "PARTIDO SOCIAL DEMOCRÁTICO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Dirceu Franciscon",
+        "nome_urna": "Dirceu Franciscon",
+        "partido": "UNIÃO",
+        "partido_nome": "UNIÃO BRASIL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Edivilson Meurer Brum",
+        "nome_urna": "Edivilson Brum",
+        "partido": "MDB",
+        "partido_nome": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Eduardo Debacco Loureiro",
+        "nome_urna": "Eduardo Loureiro",
+        "partido": "PDT",
+        "partido_nome": "PARTIDO DEMOCRÁTICO TRABALHISTA",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Elizandro Silva De Freitas Sabino",
+        "nome_urna": "Elizandro Sabino",
+        "partido": "REPUBLICANOS",
+        "partido_nome": "REPUBLICANOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Gilmar Sossella",
+        "nome_urna": "Gilmar Sossella",
+        "partido": "PDT",
+        "partido_nome": "PARTIDO DEMOCRÁTICO TRABALHISTA",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Giordani Krug Campos Ramos",
+        "nome_urna": "Gio Krug",
+        "partido": "PSD",
+        "partido_nome": "PARTIDO SOCIAL DEMOCRÁTICO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Guilherme Rech Pasin",
+        "nome_urna": "Guilherme Pasin",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Halley Lino De Souza",
+        "nome_urna": "Halley",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Humberto Matos De Oliveira",
+        "nome_urna": "Humberto Matos",
+        "partido": "PCDOB",
+        "partido_nome": "PARTIDO COMUNISTA DO BRASIL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Jeferson Oliveira Fernandes",
+        "nome_urna": "Jeferson Fernandes",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Joel Leandro Wilhelm",
+        "nome_urna": "Joel Wilhelm",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Carlos Alberto Milgarejo Pereira Junior",
+        "nome_urna": "Junior Fox",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Karen Morais Dos Santos",
+        "nome_urna": "Karen Santos",
+        "partido": "PSOL",
+        "partido_nome": "PARTIDO SOCIALISMO E LIBERDADE",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Neiva Teresinha Marques",
+        "nome_urna": "Kelly Moraes",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Leonel Guterres Radde",
+        "nome_urna": "Leonel Radde",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Luciana Krebs Genro",
+        "nome_urna": "Luciana Genro",
+        "partido": "PSOL",
+        "partido_nome": "PARTIDO SOCIALISMO E LIBERDADE",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Luciano Da Silva Silveira",
+        "nome_urna": "Luciano Silveira",
+        "partido": "MDB",
+        "partido_nome": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Luís Fernando Cavalheiro Pires",
+        "nome_urna": "Luís Fernando Pires",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Marcelo Arruda",
+        "nome_urna": "Marcelo Arruda",
+        "partido": "PSD",
+        "partido_nome": "PARTIDO SOCIAL DEMOCRÁTICO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Marcus Vinícius Vieira De Almeida",
+        "nome_urna": "Marcus Vinícius",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Matheus Pereira Gomes",
+        "nome_urna": "Matheus Gomes",
+        "partido": "PSOL",
+        "partido_nome": "PARTIDO SOCIALISMO E LIBERDADE",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Miguel Soldatelli Rossetto",
+        "nome_urna": "Miguel Rossetto",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Moises Da Silva Barboza",
+        "nome_urna": "Moisés Barboza",
+        "partido": "PSDB",
+        "partido_nome": "PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Natasha Narciso Ferreira",
+        "nome_urna": "Natasha",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Nicole Garske Weber Covatti",
+        "nome_urna": "Nicole Weber Covatti",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Ederildo Paparico Bacchi",
+        "nome_urna": "Paparico Bacchi",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Gilberto José Spier Vargas",
+        "nome_urna": "Pepe Vargas",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Claudio Maximiliano Branchieri",
+        "nome_urna": "Professor Cláudio Branchieri",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Rafael Braga Librelotto",
+        "nome_urna": "Rafael Braga",
+        "partido": "MDB",
+        "partido_nome": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Ramiro Stallbaum Rosário",
+        "nome_urna": "Ramiro Rosário",
+        "partido": "NOVO",
+        "partido_nome": "PARTIDO NOVO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Roberto Lucchese",
+        "nome_urna": "Roberto Lucchese",
+        "partido": "MDB",
+        "partido_nome": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Ronaldo Santini",
+        "nome_urna": "Ronaldo Santini",
+        "partido": "PODE",
+        "partido_nome": "PODEMOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Ronize Antonia Damassini",
+        "nome_urna": "Ronize Damassini",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Salmo Dias De Oliveira",
+        "nome_urna": "Salmo",
+        "partido": "PP",
+        "partido_nome": "PROGRESSISTAS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Mauricio Fernando Scalco",
+        "nome_urna": "Scalco",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Sergio Peres Alos",
+        "nome_urna": "Sergio Peres",
+        "partido": "REPUBLICANOS",
+        "partido_nome": "REPUBLICANOS",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Sofia Cavedon Nunes",
+        "nome_urna": "Sofia Cavedon",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Tiago Cado Fernandes",
+        "nome_urna": "Tiago Cadó",
+        "partido": "PDT",
+        "partido_nome": "PARTIDO DEMOCRÁTICO TRABALHISTA",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Vanice Helena Andrade De Matos",
+        "nome_urna": "Vanice De Matos",
+        "partido": "PL",
+        "partido_nome": "PARTIDO LIBERAL",
+        "mandato": "2027-2031"
+      },
+      {
+        "nome": "Jose Sidney Nunes De Almeida",
+        "nome_urna": "Zé Nunes",
+        "partido": "PT",
+        "partido_nome": "PARTIDO DOS TRABALHADORES",
+        "mandato": "2027-2031"
+      }
+    ]
+  },
   "fontes": [
     "https://dadosabertos.tse.jus.br/dataset/candidatos-2026",
     "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/luciano-zucco-e-eleito-governador-do-rs",

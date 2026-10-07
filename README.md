@@ -9,6 +9,7 @@ Publicado como **site estático** (Leaflet + GeoJSON) no **GitHub Pages**.
 - **Executivo estadual**: governador e vice — atual (mandato até 2026) e eleito em 2026 (posse em 2027).
 - **Senadores**: os 3 senadores atuais e os 2 eleitos em outubro de 2026.
 - **497 municípios**: prefeito(a) e vice-prefeito(a) eleitos para o mandato 2025–2028 (partido, coligação), coloridos por partido.
+- **Vereadores e deputados**: vereadores eleitos (2025–2028) por município, e deputados federais (31) e estaduais (55) eleitos em 2026.
 - **Gastos da prefeitura**: dados de aluguel/locação de imóveis de **Santa Maria/RS** (estrutura pronta para expandir a outros municípios).
 - **Softwares/tecnologia**: sistemas de gestão municipal, office e outros por município (começando por 6 municípios).
 - **Clipagem**: linha do tempo de material sobre o governador eleito — notícias, comunicações oficiais, posts, vídeos, entrevistas e agenda.
@@ -23,6 +24,7 @@ rs/
 ├── data/                       # Base de conhecimento (JSON/GeoJSON)
 │   ├── estado.json             # Governador, vice e senadores (atual + eleito)
 │   ├── municipios.json         # 497 municípios com prefeito e vice
+│   ├── vereadores.json         # Vereadores eleitos (2025-2028) por município
 │   ├── municipios.geojson      # Malha IBGE + dados mesclados (para o mapa)
 │   ├── overrides.json          # Correções curadas (cassação, renúncia, gastos)
 │   ├── softwares.json          # Softwares/tecnologia por município
@@ -219,4 +221,4 @@ O site é estático e fica na raiz do repositório. No GitHub, ative **Settings 
 
 ## Aviso de atualidade
 
-Dados políticos refletem a situação em **06/10/2026** (dois dias após o 1º turno das eleições de 2026). Municípios com cassação/eleição suplementar (ex.: Cachoeirinha, Arroio do Sal) são marcados com nota específica. Vereadores e deputados (federais/estaduais) ainda não estão incluídos nesta versão.
+Dados políticos refletem a situação em **06/10/2026** (dois dias após o 1º turno das eleições de 2026). Municípios com cassação/eleição suplementar (ex.: Cachoeirinha, Arroio do Sal) são marcados com nota específica. Inclui vereadores (2025–2028) e deputados federais/estaduais (eleitos 2026).
