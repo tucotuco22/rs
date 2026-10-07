@@ -1,0 +1,18 @@
+{
+  "palavras_chave": [
+    "aluguel",
+    "locação de imóveis",
+    "software",
+    "sistema de gestão",
+    "nomeação",
+    "exoneração"
+  ],
+  "municipios": [
+    { "territory_id": "4314902", "nome": "Porto Alegre" },
+    { "territory_id": "4305108", "nome": "Caxias do Sul" },
+    { "territory_id": "4304606", "nome": "Canoas" },
+    { "territory_id": "4314407", "nome": "Pelotas" },
+    { "territory_id": "4303103", "nome": "Cachoeirinha" }
+  ],
+  "dias_retroativos": 365
+}

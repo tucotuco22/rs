@@ -194,6 +194,18 @@ Fluxo:
    ```
    Ele calcula percentual de cumprimento por **eixo** e por **projeto** e atualiza `fact-checking-status.md`/`.json`.
 
+## Clipping dos diários oficiais (Querido Diário)
+
+Integração com a API pública do [Querido Diário](https://queridodiario.ok.org.br/) (a mesma usada pelo [Ro-DOU](https://gestaogovbr.github.io/Ro-dou/)) para fazer clipping dos **diários oficiais municipais** por palavra-chave.
+
+```bash
+python3 scripts/clip_diario.py [--dias N]
+```
+
+- Configuração em `data/diario_config.json` (palavras-chave, municípios e janela em dias).
+- Gera `clipagem/diarios/diarios.json` (estruturado) e `diarios.md` (relatório).
+- Cobertura no RS é parcial: busca por texto (nível 3) em **Porto Alegre** e **Caxias do Sul**; **Canoas, Pelotas e Cachoeirinha** têm só lista (nível 1); **Santa Maria não está coberta**.
+
 ## Executar localmente
 
 ```bash
