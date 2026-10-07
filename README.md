@@ -10,6 +10,7 @@ Publicado como **site estático** (Leaflet + GeoJSON) no **GitHub Pages**.
 - **Senadores**: os 3 senadores atuais e os 2 eleitos em outubro de 2026.
 - **497 municípios**: prefeito(a) e vice-prefeito(a) eleitos para o mandato 2025–2028 (partido, coligação), coloridos por partido.
 - **Gastos da prefeitura**: dados de aluguel/locação de imóveis de **Santa Maria/RS** (estrutura pronta para expandir a outros municípios).
+- **Softwares/tecnologia**: sistemas de gestão municipal, office e outros por município (começando por 6 municípios).
 - **Clipagem**: linha do tempo de material sobre o governador eleito — notícias, comunicações oficiais, posts, vídeos, entrevistas e agenda.
 
 ## Estrutura do repositório
@@ -110,6 +111,17 @@ Para adicionar gastos de outro município, insira o objeto `gastos` no registro 
 ```
 
 Adicione entradas por código IBGE e rode `python3 scripts/build_data.py` + `build_geojson.py`; o painel do município mostra a seção **Software e tecnologia**.
+
+Municípios já preenchidos:
+
+| Município | Sistema de gestão (ERP) | Outros |
+|---|---|---|
+| Santa Maria | Pronim (contabilidade/RH/transparência) | Site STI, e-SIC/Ouvidoria |
+| Porto Alegre | Sigef-Poa (Minsait/Indra) | Procempa, DOPA, Microsoft |
+| Caxias do Sul | GRP Thema (Grupo Thema/Pólis) | Microsoft |
+| Pelotas | Coinpel (desenvolvimento próprio) + Proges | Projus, Ouvidoria/SIC |
+| Canoas | Ábaco (transparência/NFS-e) | SEI, CanoasTec, site Ondaweb |
+| Cachoeirinha | IPM Sistemas (Atende.Net) | eComunica |
 
 ## Clipagem
 
